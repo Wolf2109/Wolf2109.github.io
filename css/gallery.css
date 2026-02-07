@@ -228,3 +228,14 @@
   border-color: var(--amber-flame);
   box-shadow: 0 0 12px rgba(255, 186, 8, 0.8);
 }
+
+/* Sakrij strelice na telefonima */
+@media (max-width: 768px) {
+  .lightbox-prev,
+  .lightbox-next,
+  .lightbox-arrow {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}

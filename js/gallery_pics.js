@@ -41,6 +41,7 @@
       t.classList.toggle("active", i === currentIndex);
     });
   }
+  
 
   // Otvaranje lightbox-a
   document.querySelector(".grid-galerija").addEventListener("click", (e) => {
@@ -93,5 +94,35 @@
       if (e.key === "ArrowLeft") showPrev();
       if (e.key === "Escape") lightbox.style.display = "none";
     }
+
   });
-})();
+
+  // Swipe podrška
+let touchStartX = 0;
+let touchEndX = 0;
+
+if (lightboxImg) {
+  lightboxImg.addEventListener("touchstart", function (e) {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  lightboxImg.addEventListener("touchend", function (e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  });
+}
+
+function handleSwipe() {
+  let diff = touchStartX - touchEndX;
+
+  if (Math.abs(diff) > 50) {
+    if (diff > 0) {
+      showNext(); // sledeća
+    } else {
+      showPrev(); // prethodna
+    }
+  }
+}
+}
+
+)();
