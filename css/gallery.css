@@ -9,6 +9,11 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  visibility: hidden;
+}
+
+.grid-galerija.ready {
+  visibility: visible;
 }
 
 .grid-galerija img {
@@ -113,6 +118,113 @@
   transform: translateY(0);
   pointer-events: auto;
 }
+
+/* Hover tekst */
+.galerija-hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.6rem 0;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.2rem;
+  background: rgba(255, 186, 8, 0.25);
+  backdrop-filter: blur(10px);
+  transform: translateY(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+/* Desktop hover ostaje isti */
+@media (min-width: 769px) {
+  .galerija-item:hover .galerija-hover-text {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* Mobile: loop animacija iz dna do 50% - sporija */
+@media (max-width: 768px) {
+  .galerija-hover-text {
+    transform: translateY(100%);
+    opacity: 0.8;
+    animation: mobilePulse 3s ease-in-out infinite; /* PRODUŽENO sa 1.5s → 3s */
+  }
+
+  /* Swipe up: tekst se podiže kompletno */
+  .galerija-item.active .galerija-hover-text {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    animation: none; /* stop loop animacije */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  /* Fade out animacija posle nekoliko sekundi */
+  .galerija-item.fade-out .galerija-hover-text {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+}
+
+/* Loop animacija za mobilni */
+@keyframes mobilePulse {
+  0% {
+    transform: translateY(100%);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0.7;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.gallery-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.page-btn {
+  background: transparent;
+  border: 2px solid var(--amber-flame);
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.page-btn:hover {
+  background: var(--amber-flame);
+  color: #000;
+}
+
+.page-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+
+
 /* Lightbox */
 .lightbox {
   display: none;
