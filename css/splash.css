@@ -1,0 +1,50 @@
+#splash-screen {
+  position: fixed;
+  inset: 0;
+  background: inherit; /* ← ISTA POZADINA KAO CELOJ STRANICI */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#splash-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(0px);
+}
+
+/* LOGO */
+#splash-screen img {
+  position: relative;
+  width: 300px;
+  max-width: 100%;
+  animation: splashPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes splashPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.7;
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+    filter: drop-shadow(0 0 14px var(--amber-flame));
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.7;
+    filter: drop-shadow(0 0 0 transparent);
+  }
+}
+
+/* sakrivanje */
+#splash-screen.hide {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+}

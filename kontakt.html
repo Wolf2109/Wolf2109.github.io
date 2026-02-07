@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt | Auto Dijagnostika Lazarević</title>
   <meta name="description" content="Kontaktirajte Auto Dijagnostika Lazarević za profesionalne usluge auto dijagnostike. Dolazimo na vašu adresu.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="slike/Logo_sajt.png">
 </head>
 <body>
   
@@ -20,6 +23,7 @@
         <li><a href="index.html">Početna</a></li>
         <li><a href="usluge.html">Usluge</a></li>
         <li><a href="cenovnik.html">Cenovnik</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
         <li><a href="o-nama.html">O nama</a></li>
         <li><a href="kontakt.html" class="active">Kontakt</a></li>
       </ul>
@@ -40,7 +44,7 @@
     <div class="contact-container">
       <div class="contact-form">
         <h2 style="color: var(--amber-flame); margin-bottom: 1.5rem; font-size: 1.8rem;">Pošaljite Poruku</h2>
-        <form>
+        <form method="post">
           <div class="form-group">
             <label for="ime">Ime i Prezime *</label>
             <input type="text" id="ime" name="ime" required>
@@ -52,13 +56,13 @@
           </div>
 
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
           </div>
 
           <div class="form-group">
-            <label for="vozilo">Marka i Model Vozila</label>
-            <input type="text" id="vozilo" name="vozilo" placeholder="npr. VW Golf 7 1.6 TDI">
+            <label for="vozilo">Marka i Model Vozila *</label>
+            <input type="text" id="vozilo" name="vozilo" placeholder="npr. VW Golf 7 1.6 TDI" required>
           </div>
 
           <div class="form-group">
@@ -70,6 +74,7 @@
             <i class="fas fa-paper-plane" style="margin-right: 10px;"></i>
             Pošalji Poruku
           </button>
+          <div id="form-message" class="form-message"></div>
         </form>
       </div>
 
@@ -78,7 +83,7 @@
           <i class="fas fa-phone-alt"></i>
           <div>
             <h3>Telefon</h3>
-            <p>+381 64 933 7958</p>
+            <a href="tel:+381649337958"><p>+381 64 933 7958</p></a>
             <p style="font-size: 0.9rem; color: #999;">Pozovite nas ili pošaljite SMS/WhatsApp/Viber</p>
           </div>
         </div>
@@ -87,7 +92,7 @@
           <i class="fas fa-envelope"></i>
           <div>
             <h3>Email</h3>
-            <p>lazarevicautodiag@gmail.com</p>
+            <a href="mailto:info@autodijagnostikalazarevic.rs"><p>info@autodijagnostikalazarevic.rs</p></a>
             <p style="font-size: 0.9rem; color: #999;">Odgovaramo u roku od 24 sata</p>
           </div>
         </div>
@@ -164,22 +169,29 @@
       <div class="footer-section">
         <h3>Auto Dijagnostika Lazarević</h3>
         <p>Profesionalna auto dijagnostika i kodiranje za sve marke vozila. Vaš partner za elektroniku automobila.</p>
+        <a href="index.html"><img src="slike/Logo_sajt.png" alt="Auto Dijagnostika Lazarević" class="logo-img" style="width: 200px;margin-left: 15%; margin-top: 10px;"></a>
       </div>
       
-      <div class="footer-section">
-        <h3>Brzi Linkovi</h3>
-        <a href="index.html">Početna</a>
-        <a href="usluge.html">Usluge</a>
-        <a href="cenovnik.html">Cenovnik</a>
-        <a href="o-nama.html">O nama</a>
-        <a href="kontakt.html">Kontakt</a>
-      </div>
+<div class="footer-section footer-links">
+  <h3>Brzi Linkovi</h3>
+  <div class="links-grid">
+    <a href="index.html">Početna</a>
+    <a href="usluge.html">Usluge</a>
+    <a href="cenovnik.html">Cenovnik</a>
+    <a href="galerija.html">Galerija</a>
+    <a href="o-nama.html">O nama</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+</div>
       
       <div class="footer-section">
         <h3>Kontakt</h3>
-        <p><i class="fas fa-phone" style="color: var(--amber-flame); margin-right: 10px;"></i> +381 64 933 7958</p>
-        <p><i class="fas fa-envelope" style="color: var(--amber-flame); margin-right: 10px;"></i> lazarevicautodiag@gmail.com</p>
+        <p><a href="tel:+381649337958"><i class="fas fa-phone" style="color: var(--amber-flame); margin-right: 10px;"></i> +381 64 933 7958</a></p>
+        <p><a href="mailto:info@autodijagnostikalazarevic.rs"><i class="fas fa-envelope" style="color: var(--amber-flame); margin-right: 10px;"></i> info@autodijagnostikalazarevic.rs</a></p>
         <p><i class="fas fa-clock" style="color: var(--amber-flame); margin-right: 10px;"></i> Pon-Sub: 08:00-20:00</p>
+        <p><a href="https://maps.app.goo.gl/uZ2WVoabG2B3FH9A7" target="_blank">
+        <i class="fas fa-map-marker-alt" style="color: var(--amber-flame); margin-right: 10px;"></i>
+        Marije Bursać 10, Lazarevac</a></p>        
       </div>
     </div>
     
@@ -187,9 +199,11 @@
       <p>&copy; 2026 Auto Dijagnostika Lazarević. Sva prava zadržana.</p>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script src="script.js"></script>
-
-
+  
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/kontaktForma.js"></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/header-scroll.js" defer></script>
+  <script src="js/animations.js" defer></script>
 </body>
 </html>

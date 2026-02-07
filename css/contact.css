@@ -1,0 +1,217 @@
+.form-message {
+  padding: 0.5rem 1rem;
+  margin-top: 0.75rem; /* razmak iznad dugmeta */
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: all 0.4s ease;
+  max-width: 100%;
+  /* background uklonjen */
+  border: none;
+  box-shadow: none;
+}
+
+.form-message.success {
+  color: #662e1c; /* amber-flame boja za tekst */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.form-message.error {
+  color: #842029; /* crvena za grešku */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Contact Form */
+/* Kontakt kontejner */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dve kolone na desktopu */
+  gap: 2rem; /* razmak između form i info boxa */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Forma */
+/* Contact Form i Info Box - prilagođeno */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dve kolone na desktopu */
+  gap: 2rem; /* razmak između form i info boxa */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem; /* padding sa strane */
+  box-sizing: border-box;
+}
+
+.contact-form {
+  background: rgba(55, 6, 23, 0.35);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 186, 8, 0.15);
+  border-radius: 25px;
+  padding: 2.5rem;
+  transition: all 0.4s ease;
+  box-sizing: border-box;
+}
+
+.contact-form:hover {
+  border-color: rgba(255, 186, 8, 0.25);
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  color: #e0e0e0;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  background: rgba(3, 7, 30, 0.6);
+  border: 1px solid rgba(255, 186, 8, 0.2);
+  border-radius: 10px;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  word-break: break-word;       /* lomljenje dugih reči */
+  overflow-wrap: break-word;    /* moderni standard */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--amber-flame);
+  box-shadow: 0 0 20px rgba(255, 186, 8, 0.25);
+  background: rgba(3, 7, 30, 0.8);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Dugme u formi */
+.contact-form .btn {
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Info boxovi */
+.contact-info {
+  display: grid;
+  gap: 2rem; /* razmak između info boxova */
+}
+
+.contact-info .info-box {
+  background: rgba(55, 6, 23, 0.35);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 186, 8, 0.15);
+  border-radius: 25px;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+  word-break: break-word;       /* lomljenje dugih reči */
+  overflow-wrap: break-word;    /* moderni standard */
+}
+
+.contact-info .info-box:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 186, 8, 0.3);
+  box-shadow: 0 15px 40px rgba(255, 186, 8, 0.2);
+}
+
+/* Responsive – mobilni prikaz */
+@media (max-width: 600px) {
+  .contact-container {
+    display: block; /* uklanja grid */
+    padding: 0 1rem; /* malo paddinga sa strane */
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%; /* preko celog ekrana */
+    max-width: 100%;
+    margin: 0 auto 1.8rem auto; /* centriranje + razmak između form i info boxa */
+    box-sizing: border-box;
+  }
+
+  .contact-form {
+    padding: 2rem 1rem; /* smanjen padding da stane lepo na ekran */
+  }
+
+  .contact-info .info-box {
+    width: 100%; /* info box preko celog ekrana */
+  }
+
+  .contact-form .btn {
+    width: 100%; /* dugme preko cele širine forme */
+    text-align: center;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1100px;
+}
+
+.info-box {
+  background: rgba(55, 6, 23, 0.35);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 186, 8, 0.15);
+  border-radius: 25px;
+  padding: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.8rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info-box:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 186, 8, 0.3);
+  box-shadow: 0 15px 40px rgba(255, 186, 8, 0.2);
+}
+
+.info-box i {
+  font-size: 2.2rem;
+  color: var(--amber-flame);
+  margin-top: 0.3rem;
+  filter: drop-shadow(0 0 15px rgba(255, 186, 8, 0.4));
+}
+
+.info-box h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.info-box p {
+  color: #c0c0c0;
+  line-height: 1.8;
+}
+
+.info-box a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}

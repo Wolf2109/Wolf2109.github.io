@@ -1,0 +1,31 @@
+/* Service Details Page */
+.service-detail {
+  background: rgba(55, 6, 23, 0.35);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 186, 8, 0.15);
+  border-radius: 25px;
+  padding: 3.5rem;
+  margin-bottom: 2.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-detail:hover {
+  border-color: rgba(255, 186, 8, 0.3);
+  box-shadow: 0 15px 40px rgba(255, 186, 8, 0.15);
+}
+
+.service-detail h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2.1rem;
+  color: var(--amber-flame);
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  text-shadow: 0 0 20px rgba(255, 186, 8, 0.3);
+}
+
+.service-detail h2 i {
+  filter: drop-shadow(0 0 15px rgba(255, 186, 8, 0.5));
+}

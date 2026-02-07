@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.autodijagnostikalazarevic.rs/sitemap.xml

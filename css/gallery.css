@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap');
+
+/* Galerija */
+.galerija{
+  padding-top: 4rem;
+}
+.grid-galerija {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.grid-galerija img {
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 25px rgba(255, 186, 8, 0.2);
+}
+
+.grid-galerija img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(255, 186, 8, 0.4);
+}
+
+.galerija-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: 2px solid var(--amber-flame);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background: var(--amber-flame);
+  color: #000;
+}
+
+.galerija-item {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  display: block; /* grid računa za element */
+}
+
+.galerija-item.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.tab-btn .count {
+  margin-left: 6px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.galerija-item {
+  position: relative; /* važno za overlay */
+  overflow: hidden;
+  border-radius: 20px;
+  display: block;
+}
+
+.galerija-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.galerija-item:hover img {
+  transform: scale(1.05);
+}
+
+.galerija-hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* padding unutra, ali ne pomera container */
+  padding: 0.6rem 0;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.2rem;
+  background: rgba(255, 186, 8, 0.25);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+  pointer-events: none;
+
+  /* ovo sprečava “lip” */
+  box-sizing: border-box;
+}
+
+.galerija-item:hover .galerija-hover-text {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 7, 30, 0.95);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  flex-direction: column;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 186, 8, 0.6);
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  color: var(--amber-flame);
+  cursor: pointer;
+  text-shadow: 0 0 15px rgba(255, 186, 8, 0.5);
+  transition: transform 0.3s;
+}
+
+.lightbox .close:hover {
+  transform: scale(1.2);
+}
+
+/* Strelice */
+.lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: var(--amber-flame);
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.lightbox-arrow:hover {
+  background: rgba(255, 186, 8, 0.2);
+  transform: translateY(-50%) scale(1.15);
+}
+
+.lightbox-arrow.left {
+  left: 2rem;
+}
+
+.lightbox-arrow.right {
+  right: 2rem;
+}
+
+
+.lightbox .close:hover {
+  transform: scale(1.2);
+}
+
+.logo-img {
+  width: 160px;
+  transition: filter 0.4s ease;
+}
+
+.logo-img:hover {
+  filter: drop-shadow(0 0 10px var(--amber-flame));
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px var(--amber-flame));
+  }
+}
+
+/* Thumbnail traka */
+.lightbox-thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  overflow-x: auto;
+  padding: 10px 20px;
+  max-width: 90%;
+}
+
+.lightbox-thumbs img {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.lightbox-thumbs img:hover {
+  opacity: 1;
+}
+
+.lightbox-thumbs img.active {
+  opacity: 1;
+  border-color: var(--amber-flame);
+  box-shadow: 0 0 12px rgba(255, 186, 8, 0.8);
+}

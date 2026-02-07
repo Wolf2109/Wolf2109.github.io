@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerija | Auto Dijagnostika Lazarević</title>
+  <meta name="description" content="Galerija naših radova i projekata iz oblasti auto dijagnostike.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="slike/Logo_sajt.png">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo-link">
+        <div class="logo">
+          <span>Auto Dijagnostika</span> Lazarević
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="usluge.html">Usluge</a></li>
+        <li><a href="cenovnik.html">Cenovnik</a></li>
+        <li><a href="galerija.html" class="active">Galerija</a></li>
+        <li><a href="o-nama.html">O nama</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+    <div style="height: 80px;"></div>
+
+  <section id="galerija">
+  <h2 class="section-title">Naša Galerija</h2>
+  <p class="section-subtitle">Pogledajte deo našeg rada i vozila koja smo servisirali</p>
+  <div class="galerija-tabs">
+    <button class="tab-btn active" data-filter="all">Sve <span class="count"></span></button>
+    <button class="tab-btn" data-filter="ecu">ECU tuning i modifikacije<span class="count"></span></button>
+    <button class="tab-btn" data-filter="dijagnostika">Dijagnostika i ažuriranje softvera<span class="count"></span></button>
+  </div>
+
+  <div class="grid-galerija">
+    <div class="galerija-item" data-category="ecu"><img src="slike/slika1.jpg" alt="Slika 1" class="galerija-img"><div class="galerija-hover-text">BMW 118d | EGR OFF</div></div>
+    <div class="galerija-item" data-category="ecu"><img src="slike/slika2.jpg" alt="Slika 2" class="galerija-img"><div class="galerija-hover-text">Opel Corsa D 1.3 CDTi EcoFlex | DPF OFF</div></div>
+    <div class="galerija-item" data-category="ecu"><img src="slike/slika3.jpg" alt="Slika 3" class="galerija-img"><div class="galerija-hover-text">VW Passat B6 1.9 TDI | DPF OFF</div></div>
+    <div class="galerija-item" data-category="ecu"><img src="slike/slika4.jpg" alt="Slika 4" class="galerija-img"><div class="galerija-hover-text">VW Golf 6 1.6 TDI | DPF OFF</div></div>
+    <div class="galerija-item" data-category="ecu"><img src="slike/slika5.jpg" alt="Slika 5" class="galerija-img"><div class="galerija-hover-text">Kia Ceed 1.4 CRDi | DPF OFF</div></div>
+    <div class="galerija-item" data-category="ecu"><img src="slike/slika6.jpg" alt="Slika 6" class="galerija-img"><div class="galerija-hover-text">Ford Fiesta MK6 1.4 TDCi | EGR OFF</div></div>
+    <div class="galerija-item" data-category="dijagnostika"><img src="slike/slika7.jpg" alt="Slika 7" class="galerija-img"><div class="galerija-hover-text">Škoda Octavia vRS | Ažuriranje softvera i mapa RNS 510</div></div>
+    <div class="galerija-item" data-category="dijagnostika"><img src="slike/slika8.jpg" alt="Slika 8" class="galerija-img"><div class="galerija-hover-text">Opel Astra H | Dijagnostika i provera parametara</div></div>
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <span class="lightbox-arrow left">&#10094;</span>
+
+  <img class="lightbox-img" src="">
+
+  <span class="lightbox-arrow right">&#10095;</span>
+
+  <!-- Thumbnail traka -->
+  <div class="lightbox-thumbs"></div>
+</div>
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Auto Dijagnostika Lazarević</h3>
+        <p>Profesionalna auto dijagnostika i kodiranje za sve marke vozila. Vaš partner za elektroniku automobila.</p>
+        <a href="index.html"><img src="slike/Logo_sajt.png" alt="Auto Dijagnostika Lazarević" class="logo-img" style="width: 200px;margin-left: 15%; margin-top: 10px;"></a>
+      </div>
+
+      <div class="footer-section footer-links">
+        <h3>Brzi Linkovi</h3>
+        <div class="links-grid">
+          <a href="index.html">Početna</a>
+          <a href="usluge.html">Usluge</a>
+          <a href="cenovnik.html">Cenovnik</a>
+          <a href="galerija.html">Galerija</a>
+          <a href="o-nama.html">O nama</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Kontakt</h3>
+        <p><a href="tel:+381649337958"><i class="fas fa-phone" style="color: var(--amber-flame); margin-right: 10px;"></i> +381 64 933 7958</a></p>
+        <p><a href="mailto:info@autodijagnostikalazarevic.rs"><i class="fas fa-envelope" style="color: var(--amber-flame); margin-right: 10px;"></i> info@autodijagnostikalazarevic.rs</a></p>
+        <p><i class="fas fa-clock" style="color: var(--amber-flame); margin-right: 10px;"></i> Pon-Sub: 08:00-20:00</p>
+        <p><a href="https://maps.app.goo.gl/uZ2WVoabG2B3FH9A7" target="_blank">
+        <i class="fas fa-map-marker-alt" style="color: var(--amber-flame); margin-right: 10px;"></i>
+        Marije Bursać 10, Lazarevac</a></p>        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Auto Dijagnostika Lazarević. Sva prava zadržana.</p>
+    </div>
+  </footer>
+
+<script src="js/menu.js" defer></script>
+<script src="js/header-scroll.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/lightbox.js" defer></script>
+<script src="js/gallery.js" defer></script>
+<script src="js/gallery_pics.js" defer></script>
+
+</body>
+</html>

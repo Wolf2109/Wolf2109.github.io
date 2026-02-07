@@ -1,0 +1,61 @@
+
+/* Logo osnovno */
+.logo {
+  display: flex;
+  align-items: center; /* vertikalno centriranje */
+  gap: 10px;           /* razmak između teksta i eventualne slike */
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  color: var(--amber-flame);
+  font-size: 1.6rem;   /* osnovna veličina */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+/* Stil za span */
+.logo span {
+  color: #fff;
+  white-space: nowrap; /* sprečava lomljenje reči */
+}
+
+/* Ako bude slika uz logo */
+.logo-img {
+  width: 60px;   /* može da se menja po potrebi */
+  height: auto;
+}
+
+/* Responsivnost */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.3rem;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    flex-direction: column; /* logo i tekst jedan ispod drugog */
+    align-items: flex-start; /* poravnanje levo */
+    font-size: 1.1rem;
+    gap: 4px;
+  }
+
+  .logo span {
+    font-size: 1rem;
+  }
+}
+
+.logo-img {
+  width: 60px; /* širina slike, prilagodi po potrebi */
+  height: auto; /* automatski zadržava proporcije */
+}
+
+.logo-img {
+  width: 160px;
+  transition: filter 0.4s ease;
+}
+
+.logo-img:hover {
+  filter: drop-shadow(0 0 10px var(--amber-flame));
+}
