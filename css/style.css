@@ -135,6 +135,7 @@ nav {
 
 /* Hero Section */
 .hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -682,7 +683,92 @@ footer {
   }
 }
 
+/* ===========================
+   GODIŠNJI ODMOR BANER
+=========================== */
 
+.hero{
+    position: relative;
+}
+
+.vacation-banner{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    z-index: 100;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.vacation-content{
+    margin: auto;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    background: rgba(20,20,20,0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255,204,51,.3);
+    border-radius: 16px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.35);
+}
+
+.vacation-content i{
+    font-size: 2rem;
+    color: #ffcc33;
+    animation: vacationPulse 1.8s infinite;
+}
+
+.vacation-text{
+    color: #fff;
+    font-size: 1.05rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.vacation-text strong{
+    color: #ffd54f;
+}
+
+@keyframes vacationPulse{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.15);
+    }
+}
+
+@media(max-width:768px){
+
+    .vacation-banner{
+        top:100px;
+        width:120%;
+        transform:translateX(-50%) scale(0.75);
+        transform-origin:top center;
+    }
+
+    .vacation-content{
+        gap:10px;
+        padding:14px 18px;
+    }
+
+    .vacation-content i{
+        font-size:1.8rem;
+    }
+
+    .vacation-text{
+        font-size:.95rem;
+    }
+}
 
 
 
