@@ -16,6 +16,15 @@
   visibility: visible;
 }
 
+/* Kada postoji samo jedna slika */
+.grid-galerija:has(.galerija-item:only-child) {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-galerija:has(.galerija-item:only-child) .galerija-item {
+  grid-column: 2;
+}
+
 .grid-galerija img {
   width: 100%;
   border-radius: 20px;
