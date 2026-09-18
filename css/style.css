@@ -771,5 +771,56 @@ footer {
 }
 
 
+/* =========================
+   POWERED BY MAGICMOTORSPORT
+   ========================= */
+
+.powered-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}
+
+.powered-by span {
+  color: #a8a8a8;
+  font-weight: 500;
+}
+
+.powered-by strong {
+  color: #d6d6d6;
+  font-weight: 600;
+}
+
+.powered-by em {
+  color: var(--amber-flame);
+  font-style: normal;
+  font-weight: 700;
+  transition: text-shadow 0.3s ease;
+}
+
+.powered-by:hover {
+  opacity: 1;
+}
+
+.powered-by:hover em {
+  text-shadow: 0 0 10px rgba(255, 186, 8, 0.35);
+}
+
+@media (max-width: 600px) {
+  .powered-by {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+}
+
+
+
 
 

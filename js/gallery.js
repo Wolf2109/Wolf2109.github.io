@@ -1,7 +1,7 @@
 // ===== Filtriranje + paginacija =====
 const tabButtons = document.querySelectorAll(".tab-btn");
 const galleryGrid = document.querySelector(".grid-galerija");
-const allItems = Array.from(document.querySelectorAll(".galerija-item"));
+const allItems = Array.from(document.querySelectorAll(".galerija-item")).reverse();
 
 const prevBtn = document.getElementById("prevPage");
 const nextBtn = document.getElementById("nextPage");
