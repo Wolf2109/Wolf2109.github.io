@@ -124,14 +124,11 @@ nav{
   color:#fff;
 }
 
-
-
 .logo-link{
   text-decoration:none;
   display:inline-flex;
   align-items:center;
 }
-
 
 /* Navigation links */
 .nav-links{
@@ -203,11 +200,6 @@ nav{
   border-radius:50%;
   right:-180px;
   top:90px;
-  background:radial-gradient(
-    circle,
-    rgba(255,186,8,.13),
-    transparent 68%
-  );
   filter:blur(5px);
 }
 
@@ -219,11 +211,6 @@ nav{
   border-radius:50%;
   left:-230px;
   bottom:-230px;
-  background:radial-gradient(
-    circle,
-    rgba(106,4,15,.34),
-    transparent 68%
-  );
 }
 
 .hero-content{
