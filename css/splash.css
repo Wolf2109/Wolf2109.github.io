@@ -1,56 +1,89 @@
-#splash-screen{
-  position:fixed;
-  inset:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:
-    radial-gradient(circle at 50% 45%,rgba(255,186,8,.10),transparent 25%),
-    radial-gradient(circle at 50% 50%,rgba(106,4,15,.18),transparent 52%),
-    #05070d;
-  z-index:9999;
-  opacity:1;
-  overflow:hidden;
+#splash-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Pozadina usklađena sa tamnim tonovima sajta */
+  background: 
+    radial-gradient(circle at 50% 50%, rgba(229, 36, 33, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 50% 50%, rgba(255, 229, 0, 0.12) 0%, transparent 35%),
+    #050505;
+  z-index: 9999;
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.6s;
 }
-#splash-screen::before{
-  content:"";
-  position:absolute;
-  width:360px;
-  height:360px;
-  border:1px solid rgba(255,186,8,.14);
-  border-radius:50%;
-  box-shadow:0 0 80px rgba(255,186,8,.07);
+
+/* Spoljni ukrasni prsten */
+#splash-screen::before {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border: 1px solid rgba(255, 229, 0, 0.15);
+  border-top-color: rgba(255, 229, 0, 0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(255, 229, 0, 0.05);
+  animation: splashSpin 8s linear infinite;
 }
-#splash-screen::after{
-  content:"";
-  position:absolute;
-  width:180px;
-  height:1px;
-  background:linear-gradient(90deg,transparent,var(--amber),transparent);
-  bottom:calc(50% - 150px);
-  opacity:.55;
+
+/* Logo sa fluidnom animacijom i sjajnim efektom */
+#splash-screen img {
+  position: relative;
+  z-index: 1;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  animation: splashLogoSmooth 2s cubic-bezier(0.16, 1, 0.3, 1) infinite alternate;
+  filter: drop-shadow(0 0 25px rgba(255, 229, 0, 0.25));
 }
-#splash-screen img{
-  position:relative;
-  z-index:1;
-  width:270px;
-  height:270px;
-  object-fit:contain;
-  animation:splashLogo 1.55s ease-in-out both;
-  filter:drop-shadow(0 0 22px rgba(255,186,8,.16));
+
+/* Animacije */
+@keyframes splashLogoSmooth {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.96) translateY(0px);
+    filter: drop-shadow(0 0 20px rgba(255, 229, 0, 0.20));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.02) translateY(-6px);
+    filter: drop-shadow(0 0 35px rgba(255, 229, 0, 0.45));
+  }
 }
-@keyframes splashLogo{
-  0%{opacity:0;transform:scale(.9)}
-  25%{opacity:1}
-  55%{transform:scale(1);filter:drop-shadow(0 0 30px rgba(255,186,8,.30))}
-  100%{opacity:1;transform:scale(1)}
+
+@keyframes splashSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
-#splash-screen.hide{
-  opacity:0;
-  transition:opacity .7s ease;
-  pointer-events:none;
+
+@keyframes splashProgress {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
 }
-@media(max-width:620px){
-  #splash-screen img{width:220px;height:220px}
-  #splash-screen::before{width:290px;height:290px}
+
+/* Klasično sakrivanje prilikom učitavanja */
+#splash-screen.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Responzivnost za mobilne uređaje */
+@media (max-width: 620px) {
+  #splash-screen img { 
+    width: 200px; 
+    height: 200px; 
+  }
+  #splash-screen::before { 
+    width: 280px; 
+    height: 280px; 
+  }
+  #splash-screen::after,
+  #splash-screen .splash-loader {
+    width: 120px;
+    bottom: calc(50% - 130px);
+  }
 }
