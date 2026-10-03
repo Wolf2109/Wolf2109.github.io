@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const galleryDocument = parser.parseFromString(html, "text/html");
 
         // Uzimamo sve stavke iz galerije
-        const galleryItems = galleryDocument.querySelectorAll(".galerija-item");
+       const galleryItems = Array.from(galleryDocument.querySelectorAll(".galerija-item")).reverse();
 
         // Iz svake stavke uzimamo tekst:
         // npr. "BMW 116d F20 | Stage 1"
