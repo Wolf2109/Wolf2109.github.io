@@ -50,7 +50,10 @@
 }
 
 .contact-form {
-  background: rgba(55, 6, 23, 0.35);
+  background:
+    radial-gradient(circle at 100% 0%,rgba(255,186,8,.09),transparent 32%),
+    radial-gradient(circle at 0% 100%,rgba(106,4,15,.16),transparent 35%),
+    linear-gradient(145deg,rgba(17,21,30,.94),rgba(8,11,17,.96));
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 186, 8, 0.15);
@@ -120,7 +123,10 @@
 }
 
 .contact-info .info-box {
-  background: rgba(55, 6, 23, 0.35);
+  background:
+    radial-gradient(circle at 100% 0%,rgba(255,186,8,.09),transparent 32%),
+    radial-gradient(circle at 0% 100%,rgba(106,4,15,.16),transparent 35%),
+    linear-gradient(145deg,rgba(17,21,30,.94),rgba(8,11,17,.96));
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 186, 8, 0.15);
@@ -175,7 +181,10 @@
 }
 
 .info-box {
-  background: rgba(55, 6, 23, 0.35);
+  background:
+    radial-gradient(circle at 100% 0%,rgba(255,186,8,.09),transparent 32%),
+    radial-gradient(circle at 0% 100%,rgba(106,4,15,.16),transparent 35%),
+    linear-gradient(145deg,rgba(17,21,30,.94),rgba(8,11,17,.96));
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 186, 8, 0.15);

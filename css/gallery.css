@@ -48,7 +48,7 @@
 
 .tab-btn {
   padding: 10px 20px;
-  border: 2px solid var(--amber-flame);
+  border: 2px solid var(--amber);
   background: transparent;
   color: #fff;
   cursor: pointer;
@@ -59,7 +59,7 @@
 
 .tab-btn:hover,
 .tab-btn.active {
-  background: var(--amber-flame);
+  background: var(--amber);
   color: #000;
 }
 
@@ -213,7 +213,7 @@ body.no-scroll {
 
 .page-btn {
   background: transparent;
-  border: 2px solid var(--amber-flame);
+  border: 2px solid var(--amber);
   color: #fff;
   font-size: 1.4rem;
   padding: 0.4rem 1rem;
@@ -223,7 +223,7 @@ body.no-scroll {
 }
 
 .page-btn:hover {
-  background: var(--amber-flame);
+  background: var(--amber);
   color: #000;
 }
 
@@ -258,7 +258,7 @@ body.no-scroll {
   top: 2rem;
   right: 2rem;
   font-size: 2.5rem;
-  color: var(--amber-flame);
+  color: var(--amber);
   cursor: pointer;
   text-shadow: 0 0 15px rgba(255, 186, 8, 0.5);
   transition: transform 0.3s;
@@ -274,7 +274,7 @@ body.no-scroll {
   top: 50%;
   transform: translateY(-50%);
   font-size: 3rem;
-  color: var(--amber-flame);
+  color: var(--amber);
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 50%;
@@ -307,7 +307,7 @@ body.no-scroll {
 }
 
 .logo-img:hover {
-  filter: drop-shadow(0 0 10px var(--amber-flame));
+  filter: drop-shadow(0 0 10px var(--amber));
 }
 
 @keyframes glow {
@@ -315,7 +315,7 @@ body.no-scroll {
     filter: drop-shadow(0 0 0 transparent);
   }
   50% {
-    filter: drop-shadow(0 0 10px var(--amber-flame));
+    filter: drop-shadow(0 0 10px var(--amber));
   }
 }
 
@@ -346,7 +346,7 @@ body.no-scroll {
 
 .lightbox-thumbs img.active {
   opacity: 1;
-  border-color: var(--amber-flame);
+  border-color: var(--amber);
   box-shadow: 0 0 12px rgba(255, 186, 8, 0.8);
 }
 
@@ -359,4 +359,135 @@ body.no-scroll {
     opacity: 0 !important;
     pointer-events: none !important;
   }
+}
+
+/* =========================================================
+   GALERIJA — MODERNI FILTERI I PAGINACIJA
+========================================================= */
+.galerija-tabs{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  margin:28px auto 34px;
+  padding:6px;
+  width:fit-content;
+  max-width:100%;
+  flex-wrap:wrap;
+  border:1px solid rgba(255,255,255,.075);
+  border-radius:16px;
+  background:rgba(255,255,255,.025);
+  box-shadow:0 12px 35px rgba(0,0,0,.16);
+}
+.tab-btn{
+  appearance:none;
+  border:1px solid transparent;
+  background:transparent;
+  color:#aeb5c0;
+  padding:11px 17px;
+  min-height:44px;
+  border-radius:11px;
+  cursor:pointer;
+  font-family:'Rajdhani',sans-serif;
+  font-size:.94rem;
+  font-weight:700;
+  letter-spacing:.35px;
+  transition:background .25s ease,color .25s ease,border-color .25s ease,transform .2s ease,box-shadow .25s ease;
+}
+.tab-btn:hover{
+  color:#fff;
+  background:rgba(255,186,8,.08);
+  border-color:rgba(255,186,8,.22);
+  transform:translateY(-1px);
+}
+.tab-btn.active{
+  color:#05070d !important;
+  background:#ffba08 !important;
+  border-color:#ffba08 !important;
+  box-shadow:0 0 0 1px rgba(255,186,8,.18),0 7px 24px rgba(255,186,8,.24) !important;
+}
+.tab-btn.active:hover{
+  color:#05070d !important;
+  background:#ffba08 !important;
+  border-color:#ffba08 !important;
+}
+.tab-btn:focus-visible,
+.page-btn:focus-visible{
+  outline:2px solid var(--amber);
+  outline-offset:3px;
+}
+.tab-btn .count{
+  display:inline-block;
+  margin-left:6px;
+  font-size:.8em;
+  opacity:.72;
+}
+.tab-btn.active .count{opacity:.75}
+
+.gallery-pagination{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  margin:32px auto 8px;
+}
+.page-btn{
+  appearance:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:46px;
+  height:42px;
+  padding:0 14px;
+  border:1px solid rgba(255,186,8,.42);
+  border-radius:11px;
+  background:rgba(255,255,255,.025);
+  color:#fff;
+  font-family:'Rajdhani',sans-serif;
+  font-size:.95rem;
+  font-weight:700;
+  cursor:pointer;
+  transition:all .25s ease;
+}
+.page-btn:hover:not(:disabled){
+  color:#090b10;
+  background:var(--amber);
+  border-color:var(--amber);
+  transform:translateY(-1px);
+}
+.page-btn:disabled{
+  opacity:.3;
+  cursor:not-allowed;
+  transform:none;
+}
+#pageInfo{
+  min-width:74px;
+  height:42px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 12px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:11px;
+  background:rgba(255,255,255,.035);
+  color:#dfe3e8;
+  font-family:'Rajdhani',sans-serif;
+  font-weight:700;
+  letter-spacing:.8px;
+}
+@media(max-width:700px){
+  .galerija-tabs{
+    width:100%;
+    padding:5px;
+    border-radius:14px;
+    gap:5px;
+  }
+  .tab-btn{
+    flex:1 1 100%;
+    padding:10px 12px;
+  }
+  .gallery-pagination{margin-top:26px}
+}
+@media(min-width:701px) and (max-width:900px){
+  .tab-btn{padding:10px 13px;font-size:.88rem}
 }

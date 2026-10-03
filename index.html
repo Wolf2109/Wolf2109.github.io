@@ -6,22 +6,21 @@
   <title>Auto Dijagnostika Lazarević | Profesionalna Auto Dijagnostika</title>
   <meta name="description" content="Auto Dijagnostika Lazarević pruža stručnu auto dijagnostiku u Lazarevcu i Beogradu. DPF, EGR i AdBlue usluge, kodiranje senzora. Dolazak na adresu.">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/logo_index.css">
   <link rel="stylesheet" href="css/splash.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="slike/Logo_sajt_boja.png">
 </head>
 <body>
-  <div id="splash-screen">
-  <img src="slike/Logo_sajt.png" alt="Auto Dijagnostika Lazarević">
-</div>
+  <!-- Splash screen je namerno samo na početnoj strani -->
+  <div id="splash-screen" aria-hidden="true">
+    <img src="slike/Logo_sajt.png" alt="Auto Dijagnostika Lazarević">
+  </div>
 
   <header>
     <nav>
-      <a href="index.html" class="logo-link">
-      <div class="logo">
-        <span>Auto Dijagnostika</span> Lazarević
-      </div></a>
+      <a href="index.html" class="logo-link" aria-label="Auto Dijagnostika Lazarević">
+        <div class="logo"><span> Auto Dijagnostika </span>Lazarević</div>
+      </a>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Početna</a></li>
         <li><a href="usluge.html">Usluge</a></li>
@@ -39,29 +38,68 @@
     </nav>
   </header>
 
+  <!-- =======================================================
+       POSLEDNJI RADOVI — TEKSTUALNA TRAKA
+       Bez fotografija; sadržaj se menja u .work-item elementima.
+  ======================================================== -->
+  <section class="latest-work-section" aria-label="Poslednji radovi">
+  <div class="latest-work-head">
+    <div class="latest-work-title">
+      <i class="fas fa-car-side"></i>
+      <span>Poslednji radovi</span>
+    </div>
+
+    <div class="latest-work-hint">
+      Poslednjih 10 intervencija
+    </div>
+  </div>
+
+  <div class="work-marquee">
+    <div class="work-track" id="latestWorkTrack"></div>
+  </div>
+</section>
 
 
-  <section class="hero">
 
-        <!-- <div class="vacation-banner">
-        <div class="vacation-content">
-            <i class="fas fa-umbrella-beach"></i>
-            <div class="vacation-text">
-                <strong>Obaveštenje:</strong>
-                Godišnji odmor od <strong>17.08.</strong> do <strong>07.09.</strong>
-                U tom periodu nećemo pružati usluge. Hvala na razumevanju!
-            </div>
-        </div>
-    </div> -->
 
+
+  <section class="hero original-home-hero">
     <div class="hero-content">
-      <img src="slike/Logo_sajt.png" alt="Auto Dijagnostika Lazarević" class="logo-img" style="width: 300px;">
-      <h1>Profesionalna <span class="highlight">Auto Dijagnostika</span> Za Sve Marke Vozila</h1>
-      <p>Precizna dijagnostika, gašenje DPF/EGR/AdBlue sistema, zamena i kodiranje komponenti. Dolazimo na vašu adresu.</p>
-      <div class="cta-buttons">
-        <a href="kontakt.html" class="btn btn-primary">Zakažite Termin</a>
-        <a href="usluge.html" class="btn btn-secondary">Više O Našim Uslugama</a>
+      <div class="hero-copy">
+        <div class="hero-logo-wrap">
+          <img class="hero-logo" src="slike/Logo_sajt.png" alt="Auto Dijagnostika Lazarević">
+        </div>
+
+        <div class="eyebrow-row">
+          <div class="eyebrow">AUTO ELEKTRONIKA · DIJAGNOSTIKA · KODIRANJE</div>
+          <span class="status hero-status is-closed" data-working-hours>
+            <i></i> <span class="status-text">Van radnog vremena</span>
+          </span>
+        </div>
+
+        <h1>Precizna dijagnostika.<span>Pametno rešenje.</span></h1>
+        <p>Precizna dijagnostika, gašenje DPF/EGR/AdBlue sistema, zamena i kodiranje komponenti. Dolazimo na vašu adresu.</p>
+
+        <div class="cta-buttons">
+          <a href="kontakt.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Zakažite termin</a>
+          <a href="usluge.html" class="btn btn-secondary"><i class="fas fa-arrow-right"></i> Pogledajte usluge</a>
+        </div>
+
+
       </div>
+    </div>
+  </section>
+
+
+  <section class="process-section">
+    <div class="section-kicker">JEDNOSTAVAN PROCES</div>
+    <h2 class="section-title">Od problema do rešenja</h2>
+    <p class="section-subtitle">Bez nepotrebnog komplikovanja — prvo utvrdimo problem, zatim dogovaramo konkretno rešenje.</p>
+    <div class="process-grid">
+      <div class="service-card"><div class="process-number">01</div><h3>Poziv</h3><p>Opišete problem i dogovaramo termin.</p></div>
+      <div class="service-card"><div class="process-number">02</div><h3>Dijagnostika</h3><p>Proveravamo greške, parametre i rad sistema.</p></div>
+      <div class="service-card"><div class="process-number">03</div><h3>Analiza</h3><p>Objašnjavamo nalaz i predlažemo sledeći korak.</p></div>
+      <div class="service-card"><div class="process-number">04</div><h3>Rešenje</h3><p>Izvodimo dogovorenu intervenciju i proveru.</p></div>
     </div>
   </section>
 
@@ -145,14 +183,71 @@
     </div>
   </section>
 
-  <section id="cta" style="text-align: center; padding: 5rem 2rem; background: linear-gradient(135deg, rgba(55, 6, 23, 0.5), rgba(106, 4, 15, 0.3)); border-radius: 30px; margin: 3rem auto; max-width: 1200px;">
-    <h2 class="section-title">Imate Problem Sa Vozilom?</h2>
-    <p style="font-size: 1.2rem; color: #d0d0d0; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-      Kontaktirajte nas danas i rešite sve dijagnostičke probleme brzo i profesionalno
-    </p>
-    <a href="kontakt.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.2rem 3rem;">
-      Kontaktirajte Nas 
-    </a>
+  <!-- =======================================================
+       KONTAKT — BRZA KONTAKT SEKCIJA
+  ======================================================== -->
+  <section class="home-contact" id="kontaktirajte-nas">
+    <div class="home-contact-inner">
+      <div class="home-contact-heading">
+        <div class="section-kicker">TU SMO ZA VAS</div>
+        <h2 class="section-title">Kontaktirajte nas</h2>
+        <p>Imate problem, grešku na tabli ili želite da proverimo vozilo? Javite nam se i dogovorićemo termin koji vam odgovara.</p>
+      </div>
+
+      <div class="home-contact-grid">
+        <a class="home-contact-card" href="tel:+381649337958">
+          <span class="home-contact-icon"><i class="fas fa-phone"></i></span>
+          <span class="home-contact-content">
+            <small>Pozovite nas</small>
+            <strong>064 933 7958</strong>
+            <em>Direktan kontakt</em>
+          </span>
+          <i class="fas fa-arrow-up-right-from-square home-contact-arrow"></i>
+        </a>
+
+        <a class="home-contact-card" href="mailto:info@autodijagnostikalazarevic.rs">
+          <span class="home-contact-icon"><i class="fas fa-envelope"></i></span>
+          <span class="home-contact-content">
+            <small>Pošaljite upit</small>
+            <strong>info@autodijagnostikalazarevic.rs</strong>
+            <em>Odgovaramo u najkraćem roku</em>
+          </span>
+          <i class="fas fa-arrow-up-right-from-square home-contact-arrow"></i>
+        </a>
+
+        <a class="home-contact-card" href="https://maps.app.goo.gl/uZ2WVoabG2B3FH9A7" target="_blank" rel="noopener">
+          <span class="home-contact-icon"><i class="fas fa-location-dot"></i></span>
+          <span class="home-contact-content">
+            <small>Pronađite nas</small>
+            <strong>Marije Bursać 10</strong>
+            <em>Lazarevac · Otvori mapu</em>
+          </span>
+          <i class="fas fa-arrow-up-right-from-square home-contact-arrow"></i>
+        </a>
+      </div>
+
+      <div class="home-contact-bottom">
+        <div class="home-hours">
+          <span class="home-hours-icon"><i class="fas fa-clock"></i></span>
+          <div>
+            <small>Radno vreme</small>
+            <strong>Pon–Pet 15:00–20:00 <span>·</span> Subota 09:00–12:00</strong>
+          </div>
+        </div>
+        <a href="kontakt.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Zakažite termin</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <div class="cta-inner">
+      <div>
+        <div class="section-kicker">SPREMNI SMO DA POMOGNEMO</div>
+        <h2 class="section-title">Imate problem sa vozilom?</h2>
+        <p>Precizna dijagnostika je prvi korak do pravog rešenja.</p>
+      </div>
+      <a href="usluge.html" class="btn btn-secondary"><i class="fas fa-arrow-right"></i> Pogledajte sve usluge</a>
+    </div>
   </section>
 
   <footer>
@@ -160,7 +255,7 @@
       <div class="footer-section">
         <h3>Auto Dijagnostika Lazarević</h3>
         <p>Profesionalna auto dijagnostika i kodiranje za sve marke vozila. Vaš partner za elektroniku automobila.</p>
-        <a href="index.html" class="footer-logo"><img src="slike/Logo_sajt.png" alt="Auto Dijagnostika Lazarević" class="logo-img" style="width: 200px;margin-left: 15%; margin-top: 10px;"></a>
+        <a href="index.html" class="footer-logo"><img src="slike/Logo_sajt.png" alt="Auto Dijagnostika Lazarević" class="logo-img"></a>
       </div>
       
 <div class="footer-section footer-links">
@@ -199,8 +294,10 @@
   </footer>
 
 <script src="js/splash.js" defer></script>
+<script src="js/working-hours.js" defer></script>
 <script src="js/menu.js" defer></script>
 <script src="js/header-scroll.js" defer></script>
 <script src="js/animations.js" defer></script>
+<script src="js/working-items.js"></script>
 </body>
 </html>
