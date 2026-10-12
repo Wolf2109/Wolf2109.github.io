@@ -1,6 +1,6 @@
 (() => {
   const translations = {
-    'Početna':'Home','Usluge':'Services','Cenovnik':'Pricing','Konfigurator':'Vehicle Configurator','Galerija':'Gallery','O nama':'About Us','Kontakt':'Contact', 'npr.':'etc',
+    'Početna':'Home','Usluge':'Services','Cenovnik':'Pricing','Konfigurator':'Vehicle Configurator','Galerija':'Gallery','O nama':'About Us','Kontakt':'Contact', 'npr.':'etc', '© 2026 Auto Dijagnostika Lazarević. Sva prava zadržana.':'© 2026 Auto Dijagnostika Lazarević. All rights reserved.',
     'Cenovnik Usluga':'Service Pricing','Transparentne cene profesionalnih dijagnostičkih i softverskih usluga':'Transparent pricing for professional diagnostics and software services', 'Otvoreno – Pozovite odmah': 'Open - Call us now','Closed' : 'Send us inquiry',
     'Osnovna Dijagnostika':'Basic Diagnostics','Očitavanje i brisanje grešaka, analiza parametara i savetovanje.':'Fault-code reading and clearing, parameter analysis and advice.',
     'DPF / EGR / AdBlue OFF':'DPF / EGR / AdBlue OFF','Softversko gašenje sistema bez grešaka i upozorenja.':'Software deactivation of systems without fault codes or warnings.',
