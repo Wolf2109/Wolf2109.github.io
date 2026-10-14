@@ -1,7 +1,7 @@
 (() => {
   const translations = {
     'Početna':'Home','Usluge':'Services','Cenovnik':'Pricing','Konfigurator':'Vehicle Configurator','Galerija':'Gallery','O nama':'About Us','Kontakt':'Contact', 'npr.':'etc', '© 2026 Auto Dijagnostika Lazarević. Sva prava zadržana.':'© 2026 Auto Dijagnostika Lazarević. All rights reserved.',
-    'Cenovnik Usluga':'Service Pricing','Transparentne cene profesionalnih dijagnostičkih i softverskih usluga':'Transparent pricing for professional diagnostics and software services', 'Otvoreno – Pozovite odmah': 'Open - Call us now','Van radnog vremena – Pošaljite upit' : 'Closed - Send us inquiry',
+    'Cenovnik Usluga':'Service Pricing','Transparentne cene profesionalnih dijagnostičkih i softverskih usluga':'Transparent pricing for professional diagnostics and software services', 'Otvoreno – Pozovite odmah': 'Open - Call us now','Closed' : 'Send us inquiry',
     'Osnovna Dijagnostika':'Basic Diagnostics','Očitavanje i brisanje grešaka, analiza parametara i savetovanje.':'Fault-code reading and clearing, parameter analysis and advice.',
     'DPF / EGR / AdBlue OFF':'DPF / EGR / AdBlue OFF','Softversko gašenje sistema bez grešaka i upozorenja.':'Software deactivation of systems without fault codes or warnings.',
     'Stage 1':'Stage 1','Softversko povećanje snage bez zamene postojećih delova na vozilu.':'Software-based power increase without replacing existing vehicle parts.',
@@ -276,7 +276,7 @@ document.querySelectorAll('input, textarea, button, [aria-label]').forEach(el =>
 .language-switch .lang-text {
     position: relative;
     z-index: 2;
-    width: 34px;
+    width: 29px;
     text-align: center;
 
     font-family: 'Rajdhani', sans-serif;
