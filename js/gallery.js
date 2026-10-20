@@ -1,143 +1,106 @@
-// ===== Filtriranje + paginacija =====
-const tabButtons = document.querySelectorAll(".tab-btn");
-const galleryGrid = document.querySelector(".grid-galerija");
-const allItems = Array.from(document.querySelectorAll(".galerija-item")).reverse();
+(() => {
+  const grid = document.getElementById('gallery');
+  if (!grid) return;
+  const PAGE = 12;
+  // HTML je poređan od najstarije ka najnovijoj; prikaz je od najnovije.
+  const shots = [...grid.querySelectorAll('.shot')].reverse();
+  shots.forEach(s => grid.append(s));
+  const chips = [...document.querySelectorAll('.chip')];
+  const more = document.getElementById('more');
+  let filter = 'all', shown = PAGE;
 
-const prevBtn = document.getElementById("prevPage");
-const nextBtn = document.getElementById("nextPage");
-const pageInfo = document.getElementById("pageInfo");
-
-let currentFilter = "all";
-let cP = 1;
-const itemsPerPage = 10;
-
-function renderGallery() {
-  galleryGrid.innerHTML = "";
-
-  const filteredItems = allItems.filter(item =>
-    currentFilter === "all" || item.dataset.category === currentFilter
-  );
-
-  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
-  if (cP > totalPages) cP = totalPages || 1;
-
-  const start = (cP - 1) * itemsPerPage;
-  const pageItems = filteredItems.slice(start, start + itemsPerPage);
-
-  pageItems.forEach((item, index) => {
-    item.style.opacity = 0;
-    item.style.transform = "translateY(20px)";
-    galleryGrid.appendChild(item);
-
-    setTimeout(() => {
-      item.style.transition = "opacity 0.35s ease, transform 0.35s ease";
-      item.style.opacity = 1;
-      item.style.transform = "translateY(0)";
-    }, 80 * index);
-  });
+  const matching = () => shots.filter(s => filter === 'all' || s.dataset.category === filter);
   
-  // Update paginacije
-  if (pageInfo && prevBtn && nextBtn) {
-    pageInfo.textContent = `${cP} / ${totalPages || 1}`;
-    prevBtn.disabled = cP === 1;
-    nextBtn.disabled = cP === totalPages;
+  const render = () => {
+    const list = matching();
+    shots.forEach(s => { s.hidden = true; });
+    list.slice(0, shown).forEach(s => { s.hidden = false; });
+    
+    // Pronađi kontejner .more ili samo dugme
+    const moreContainer = document.querySelector('.more') || more;
+    if (moreContainer) {
+      if (shown >= list.length) {
+        moreContainer.style.setProperty('display', 'none', 'important');
+      } else {
+        moreContainer.style.removeProperty('display');
+      }
+    }
+  };
+
+  chips.forEach(c => {
+    const n = shots.filter(s => c.dataset.filter === 'all' || s.dataset.category === c.dataset.filter).length;
+    const countEl = c.querySelector('.count');
+    if (countEl) countEl.textContent = '(' + n + ')';
+    
+    c.addEventListener('click', () => {
+      chips.forEach(x => x.setAttribute('aria-pressed', String(x === c)));
+      filter = c.dataset.filter; 
+      shown = PAGE; 
+      render();
+    });
+  });
+
+  if (more) {
+    more.addEventListener('click', () => { 
+      shown += PAGE; 
+      render(); 
+    });
   }
-}
 
-// Tab klik
-tabButtons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    tabButtons.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
+  grid.querySelectorAll('img').forEach(img => img.addEventListener('error', () => {
+    if (img.dataset.full && img.src.indexOf(img.dataset.full) === -1) img.src = img.dataset.full;
+  }));
+  
+  render();
 
-    currentFilter = btn.dataset.filter;
-    cP = 1;
-    renderGallery();
-  });
-});
+  // Lightbox
+  const lb = document.getElementById('lightbox');
+  if (!lb) return;
+  const lbImg = lb.querySelector('.lb-stage img');
+  const cap = lb.querySelector('.lb-cap');
+  let idx = 0, current = [];
 
-// Dugmad za stranicu
-if (prevBtn && nextBtn) {
-  prevBtn.addEventListener("click", () => {
-    cP--;
-    renderGallery();
-  });
+  const show = i => {
+    idx = (i + current.length) % current.length;
+    const s = current[idx], img = s.querySelector('img');
+    lbImg.src = img.dataset.full || img.src;
+    lbImg.alt = img.alt;
+    cap.querySelector('b').textContent = s.querySelector('figcaption b').textContent;
+    cap.querySelector('span').textContent = s.querySelector('figcaption span').textContent;
+    cap.querySelector('small').textContent = (idx + 1) + ' / ' + current.length;
+  };
 
-  nextBtn.addEventListener("click", () => {
-    cP++;
-    renderGallery();
-  });
-  galleryGrid.classList.add("ready");
-}
+  const open = shot => {
+    current = matching();
+    show(current.indexOf(shot));
+    lb.showModal();
+    document.body.style.overflow = 'hidden';
+  };
 
-// Brojač slika
-const updateCounts = () => {
-  tabButtons.forEach(btn => {
-    const filter = btn.dataset.filter;
-    const countSpan = btn.querySelector(".count");
-    let count = allItems.filter(item =>
-      filter === "all" || item.dataset.category === filter
-    ).length;
-    countSpan.textContent = `(${count})`;
-  });
-};
-
-updateCounts();
-renderGallery();
-
-// ===== Mobilni swipe za hover tekst =====
-const galleryItems = document.querySelectorAll(".galerija-item");
-
-galleryItems.forEach(item => {
-  let startY = 0;
-  let endY = 0;
-
-  item.addEventListener("touchstart", e => {
-    startY = e.touches[0].clientY;
-  }, { passive: true });
-
-  item.addEventListener("touchmove", e => {
-    endY = e.touches[0].clientY;
-  }, { passive: true });
-
-  item.addEventListener("touchend", () => {
-    const diff = startY - endY;
-
-    if (diff > 30 && window.innerWidth <= 768) {
-      item.classList.add("active");
-
-      setTimeout(() => {
-        item.classList.add("fade-out");
-        setTimeout(() => {
-          item.classList.remove("active", "fade-out");
-        }, 500);
-      }, 3000);
-    }
+  const close = () => lb.close();
+  lb.addEventListener('close', () => { document.body.style.overflow = ''; });
+  
+  grid.addEventListener('click', e => {
+    const b = e.target.closest('.shot button');
+    if (b) open(b.closest('.shot'));
   });
 
-  item.addEventListener("click", () => {
-    if (window.innerWidth <= 768 && item.classList.contains("active")) {
-      item.classList.add("fade-out");
-      setTimeout(() => {
-        item.classList.remove("active", "fade-out");
-      }, 500);
-    }
-  });
-});
-
-// ===== Onemogućavanje skrola kada je lightbox otvoren =====
-
-if (lightbox) {
-  const observer = new MutationObserver(() => {
-    if (lightbox.classList.contains("open") || lightbox.style.display === "flex") {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
+  lb.querySelector('.lb-close').addEventListener('click', close);
+  lb.querySelector('.lb-prev').addEventListener('click', () => show(idx - 1));
+  lb.querySelector('.lb-next').addEventListener('click', () => show(idx + 1));
+  lb.addEventListener('click', e => { if (e.target === lb || e.target.classList.contains('lb-stage')) close(); });
+  
+  lb.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') show(idx + 1);
+    if (e.key === 'ArrowLeft') show(idx - 1);
   });
 
-  observer.observe(lightbox, {
-    attributes: true,
-    attributeFilter: ["class", "style"]
+  let x0 = null;
+  lb.addEventListener('touchstart', e => { x0 = e.changedTouches[0].screenX; }, { passive: true });
+  lb.addEventListener('touchend', e => {
+    if (x0 === null) return;
+    const d = x0 - e.changedTouches[0].screenX;
+    if (Math.abs(d) > 50) show(idx + (d > 0 ? 1 : -1));
+    x0 = null;
   });
-}
+})();

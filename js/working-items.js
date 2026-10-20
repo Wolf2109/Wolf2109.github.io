@@ -1,124 +1,32 @@
-document.addEventListener("DOMContentLoaded", async () => {
-
-    const workTrack = document.getElementById("latestWorkTrack");
-
-    // Ako sekcija ne postoji na stranici, prekidamo
-    if (!workTrack) return;
-
-    try {
-
-        // Učitavamo galerija.html
-        const response = await fetch("galerija.html", {
-            cache: "no-store"
-        });
-
-        if (!response.ok) {
-            throw new Error(`Greška pri učitavanju galerije: ${response.status}`);
-        }
-
-        const html = await response.text();
-
-        // Pretvaramo galerija.html u DOM
-        const parser = new DOMParser();
-        const galleryDocument = parser.parseFromString(html, "text/html");
-
-        // Uzimamo sve stavke iz galerije
-       const galleryItems = Array.from(galleryDocument.querySelectorAll(".galerija-item")).reverse();
-
-        // Iz svake stavke uzimamo tekst:
-        // npr. "BMW 116d F20 | Stage 1"
-        const latestWorks = [];
-
-        galleryItems.forEach(item => {
-
-            const textElement = item.querySelector(".galerija-hover-text");
-
-            if (!textElement) return;
-
-            const text = textElement.textContent.trim();
-
-            if (text) {
-                latestWorks.push(text);
-            }
-
-        });
-
-        // Samo prvih 10
-        const latestTen = latestWorks.slice(0, 10);
-
-        // Ako nema podataka
-        if (!latestTen.length) {
-            console.warn("Nisu pronađeni radovi u galerija.html");
-            return;
-        }
-
-        // Pravi jednu grupu stavki
-        function createWorkGroup() {
-
-            const fragment = document.createDocumentFragment();
-
-            latestTen.forEach((text, index) => {
-
-                const parts = text.split("|");
-
-                const vehicle = parts[0].trim();
-                const service = parts.slice(1).join("|").trim();
-
-                const item = document.createElement("div");
-                item.className = "work-item";
-
-                // Broj
-                const number = document.createElement("span");
-                number.className = "work-number";
-                number.textContent = String(index + 1).padStart(2, "0");
-
-                // Tekst
-                const workText = document.createElement("span");
-                workText.className = "work-text";
-
-                workText.appendChild(
-                    document.createTextNode(vehicle)
-                );
-
-                // Usluga
-                if (service) {
-
-                    const serviceElement = document.createElement("b");
-
-                    serviceElement.textContent = service;
-
-                    workText.appendChild(serviceElement);
-                }
-
-                item.appendChild(number);
-                item.appendChild(workText);
-
-                fragment.appendChild(item);
-            });
-
-            return fragment;
-        }
-
-        // Očistimo postojeći sadržaj
-        workTrack.replaceChildren();
-
-        // Prva grupa
-        workTrack.appendChild(createWorkGroup());
-
-        // Druga grupa za beskonačnu traku
-        workTrack.appendChild(createWorkGroup());
-
-        console.log(
-            `Poslednji radovi: učitano ${latestTen.length} stavki iz galerija.html`
-        );
-
-    } catch (error) {
-
-        console.error(
-            "Greška kod učitavanja poslednjih radova:",
-            error
-        );
-
-    }
-
+// Traka "Poslednji radovi" čita najnovijih 10 stavki iz galerija.html.
+// Nova slika dodata na kraj galerija.html automatski se pojavljuje i ovde.
+document.addEventListener('DOMContentLoaded', async () => {
+  const list = document.getElementById('latestWorks');
+  const wrap = list && list.closest('section');
+  if (wrap) {
+    wrap.querySelectorAll('.scroll-btns button').forEach(b => b.addEventListener('click', () => {
+      list.scrollBy({ left: Number(b.dataset.dir) * 280, behavior: 'smooth' });
+    }));
+  }
+  if (!list) return;
+  try {
+    const res = await fetch('galerija.html', { cache: 'no-store' });
+    if (!res.ok) throw new Error(res.status);
+    const doc = new DOMParser().parseFromString(await res.text(), 'text/html');
+    const items = [...doc.querySelectorAll('.shot')].reverse().slice(0, 10);
+    if (!items.length) return;
+    const frag = document.createDocumentFragment();
+    items.forEach(f => {
+      const img = f.querySelector('img');
+      const li = document.createElement('li');
+      li.className = 'work';
+      const a = document.createElement('a'); a.href = 'galerija.html';
+      const im = document.createElement('img');
+      im.src = img.getAttribute('src'); im.alt = img.alt; im.width = 560; im.height = 746; im.loading = 'lazy';
+      const b = document.createElement('b'); b.textContent = f.querySelector('figcaption b').textContent;
+      const s = document.createElement('span'); s.textContent = f.querySelector('figcaption span').textContent;
+      a.append(im, b, s); li.append(a); frag.append(li);
+    });
+    list.replaceChildren(frag);
+  } catch (e) { /* ostaje statična lista iz index.html */ }
 });

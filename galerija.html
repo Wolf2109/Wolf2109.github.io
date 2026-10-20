@@ -1,182 +1,104 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galerija radova | Auto Dijagnostika Lazarević</title>
-  <meta name="description" content="Pogledajte primere radova iz oblasti auto dijagnostike, ECU programiranja i softverskih usluga.">
-  <link rel="canonical" href="https://autodijagnostikalazarevic.rs/galerija.html">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="sr_RS">
-  <meta property="og:site_name" content="Auto Dijagnostika Lazarević">
-  <meta property="og:title" content="Galerija radova | Auto Dijagnostika Lazarević">
-  <meta property="og:description" content="Pogledajte primere radova iz oblasti auto dijagnostike, ECU programiranja i softverskih usluga.">
-  <meta property="og:url" content="https://autodijagnostikalazarevic.rs/galerija.html">
-  <meta property="og:image" content="https://autodijagnostikalazarevic.rs/slike/Logo_sajt_boja.png">
-  <meta name="theme-color" content="#05070d">
-  
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/gallery.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="slike/Logo_sajt_boja.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-en="Gallery of work | Auto Dijagnostika Lazarević">Galerija radova | Auto Dijagnostika Lazarević</title>
+<meta name="description" content="Pogledajte deo našeg rada i vozila koja smo servisirali: ECU tuning, DPF/EGR intervencije, dijagnostika i ažuriranje softvera." data-en="A look at our work and the vehicles we have serviced: ECU tuning, DPF/EGR interventions, diagnostics and software updates.">
+<link rel="canonical" href="https://autodijagnostikalazarevic.rs/galerija.html">
+<meta property="og:type" content="website"><meta property="og:locale" content="sr_RS">
+<meta property="og:site_name" content="Auto Dijagnostika Lazarević">
+<meta property="og:title" content="Galerija radova | Auto Dijagnostika Lazarević"><meta property="og:description" content="Pogledajte deo našeg rada i vozila koja smo servisirali: ECU tuning, DPF/EGR intervencije, dijagnostika i ažuriranje softvera.">
+<meta property="og:url" content="https://autodijagnostikalazarevic.rs/galerija.html"><meta property="og:image" content="https://autodijagnostikalazarevic.rs/slike/og-image.png">
+<meta name="theme-color" content="#05070d">
+<link rel="icon" type="image/png" href="slike/favicon-48.png"><link rel="apple-touch-icon" href="slike/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <header>
-    <nav>
-      <a href="index.html" class="logo-link" aria-label="Auto Dijagnostika Lazarević">
-        <div class="logo"><span> Auto Dijagnostika </span>Lazarević</div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Početna</a></li>
-        <li><a href="usluge.html">Usluge</a></li>
-        <li><a href="cenovnik.html">Cenovnik</a></li>
-        <li><a href="konfigurator.html">Konfigurator</a></li>
-        <li><a href="galerija.html" class="active">Galerija</a></li>
-        <li><a href="o-nama.html">O nama</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
-
-    <div style="height: 80px;"></div>
-
-  <section id="galerija">
-  <h2 class="section-title">Naša Galerija</h2>
-  <p class="section-subtitle">Pogledajte deo našeg rada i vozila koja smo servisirali</p>
-  <div class="galerija-tabs">
-    <button class="tab-btn active" data-filter="all">Sve <span class="count"></span></button>
-    <button class="tab-btn" data-filter="ecu">ECU tuning i modifikacije<span class="count"></span></button>
-    <button class="tab-btn" data-filter="dijagnostika">Dijagnostika i ažuriranje softvera<span class="count"></span></button>
-  </div>
-
-  <div class="grid-galerija">
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika1.jpg" alt="Slika 1" class="galerija-img"><div class="galerija-hover-text">BMW 118d | EGR OFF</div> <div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika2.jpg" alt="Slika 2" class="galerija-img"><div class="galerija-hover-text">Opel Corsa D 1.3 CDTi EcoFlex | DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika3.jpg" alt="Slika 3" class="galerija-img"><div class="galerija-hover-text">VW Passat B6 1.9 TDI | DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika4.jpg" alt="Slika 4" class="galerija-img"><div class="galerija-hover-text">VW Golf VI 1.6 TDI | DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika5.jpg" alt="Slika 5" class="galerija-img"><div class="galerija-hover-text">Kia Ceed 1.4 CRDi | DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika6.jpg" alt="Slika 6" class="galerija-img"><div class="galerija-hover-text">Ford Fiesta MK6 1.4 TDCi | EGR OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="dijagnostika"><img src="slike/slika7.jpg" alt="Slika 7" class="galerija-img"><div class="galerija-hover-text">Škoda Octavia vRS | Ažuriranje softvera i mapa RNS 510</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="dijagnostika"><img src="slike/slika8.jpg" alt="Slika 8" class="galerija-img"><div class="galerija-hover-text">Opel Astra H | Dijagnostika i provera parametara</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika9.jpg" alt="Slika 9" class="galerija-img"><div class="galerija-hover-text">Opel Astra H 1.7 CDTi | Stage 1</div><div class="hover-arrow"></div></div>   
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika10.jpg" alt="Slika 10" class="galerija-img"><div class="galerija-hover-text">BMW 118d | EGR/DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika11.jpg" alt="Slika 11" class="galerija-img"><div class="galerija-hover-text">Ford Focus 1.6 TDCi | EGR/DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika12.jpg" alt="Slika 12" class="galerija-img"><div class="galerija-hover-text">VW Passat B6 2.0 TDI BMP | Stage 1</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika13.jpg" alt="Slika 13" class="galerija-img"><div class="galerija-hover-text">VW Golf VI 2.0 TDI | Stage 1</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika14.jpg" alt="Slika 14" class="galerija-img"><div class="galerija-hover-text">VW Passat B6 2.0 TDI BKP | EGR OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika15.jpg" alt="Slika 15" class="galerija-img"><div class="galerija-hover-text">VW Golf V 1.9 TDI | EGR OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika16.jpg" alt="Slika 16" class="galerija-img"><div class="galerija-hover-text">Fiat Punto Evo 1.3 MultiJet | EGR/DPF Off</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="dijagnostika"><img src="slike/slika17.jpg" alt="Slika 17" class="galerija-img"><div class="galerija-hover-text">Mercedes W203 | Vraćanje EEPROM memorije na fabričke vrednosti radi adaptacije na novo vozilo</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika18.jpg" alt="Slika 18" class="galerija-img"><div class="galerija-hover-text">VW Golf IV 1.9 TDI | HardCut Rev Limiter</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika19.jpg" alt="Slika 19" class="galerija-img"><div class="galerija-hover-text">VW Passat B6 2.0 TDI BMP | ECU Clone</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika20.jpg" alt="Slika 20" class="galerija-img"><div class="galerija-hover-text">Audi A6 2.5 TDI | Stage 1</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika21.jpg" alt="Slika 21" class="galerija-img"><div class="galerija-hover-text">Škoda Octavia 1.9 TDI | EGR OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika22.jpg" alt="Slika 22" class="galerija-img"><div class="galerija-hover-text">Citroen C5 2.0 HDI | EGR/FAP OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika23.jpg" alt="Slika 23" class="galerija-img"><div class="galerija-hover-text">Audi A3 2.0 TDI | EGR/DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika24.jpg" alt="Slika 24" class="galerija-img"><div class="galerija-hover-text">Opel Zafira 1.9 CDTi | EGR OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika25.jpg" alt="Slika 25" class="galerija-img"><div class="galerija-hover-text">Fiat Punto Evo 1.3 MultiJet | EGR/DPF Off</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika26.jpg" alt="Slika 26" class="galerija-img"><div class="galerija-hover-text">Fiat Doblo 1.3 MultiJet | DPF Off</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika27.jpg" alt="Slika 27" class="galerija-img"><div class="galerija-hover-text">VW Polo 1.9 TDI | Stage 1</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika28.jpg" alt="Slika 28" class="galerija-img"><div class="galerija-hover-text">Škoda Yeti 2.0 TDI | Stage 1</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika29.jpg" alt="Slika 29" class="galerija-img"><div class="galerija-hover-text">Peugeot 307 1.6 HDI | DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika30.jpg" alt="Slika 30" class="galerija-img"><div class="galerija-hover-text">Suzuki Swift 1.2 | CAT OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika31.jpg" alt="Slika 31" class="galerija-img"><div class="galerija-hover-text">VW Tiguan 2.0 TDI | DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="dijagnostika"><img src="slike/slika32.jpg" alt="Slika 32" class="galerija-img"><div class="galerija-hover-text">Mercedes Viano | Provera vozila pre kupovine</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika33.jpg" alt="Slika 33" class="galerija-img"><div class="galerija-hover-text">VW Passat B6 1.9 TDI | IMMO OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika34.jpg" alt="Slika 34" class="galerija-img"><div class="galerija-hover-text">Citroen C4 Cactus 1.6 BlueHDI | DPF OFF</div><div class="hover-arrow"></div></div> 
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika35.jpg" alt="Slika 35" class="galerija-img"><div class="galerija-hover-text">BMW 320d E90 | DPF OFF</div><div class="hover-arrow"></div></div>  
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika36.jpg" alt="Slika 36" class="galerija-img"><div class="galerija-hover-text">BMW 116d F20 | Stage 1</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika37.jpg" alt="Slika 37" class="galerija-img"><div class="galerija-hover-text">Fiat Qubo 1.3 MultiJet | DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="dijagnostika"><img src="slike/slika38.jpg" alt="Slika 38" class="galerija-img"><div class="galerija-hover-text">Porsche Cayenne 4.8 V8 Turbo | Dijagnostika</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika39.jpg" alt="Slika 39" class="galerija-img"><div class="galerija-hover-text">Fiat Grande Punto | EGR OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika40.jpg" alt="Slika 40" class="galerija-img"><div class="galerija-hover-text">Fiat Grande Punto | DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika41.jpg" alt="Slika 41" class="galerija-img"><div class="galerija-hover-text">VW Tiguan 2.0 TDI | EGR/DPF/AdBlue OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika42.jpg" alt="Slika 42" class="galerija-img"><div class="galerija-hover-text">Peugeot 308 1.6 HDI | DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="dijagnostika"><img src="slike/slika43.jpg" alt="Slika 43" class="galerija-img"><div class="galerija-hover-text">Citroen C5 x7 | Reparacija komandi klime</div><div class="hover-arrow"></div></div>  
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika44.jpg" alt="Slika 44" class="galerija-img"><div class="galerija-hover-text"> Škoda Yeti 2.0 TDI | EGR OFF</div><div class="hover-arrow"></div></div>  
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika45.jpg" alt="Slika 45" class="galerija-img"><div class="galerija-hover-text">Dacia Dokker 1.5 dCi | DPF OFF</div><div class="hover-arrow"></div></div>
-    <div class="galerija-item" data-category="ecu"><img src="slike/slika46.jpg" alt="Slika 46" class="galerija-img"><div class="galerija-hover-text">BMW 118d E87 | Stage 1</div><div class="hover-arrow"></div></div>
-  </div>
-
-  <div class="gallery-pagination">
-  <button class="page-btn" id="prevPage">‹</button>
-  <span id="pageInfo">1 / 1</span>
-  <button class="page-btn" id="nextPage">›</button>
+<a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
+<header class="site-header">
+<div class="wrap"><nav class="nav" aria-label="Glavna navigacija">
+<a class="brand" href="index.html" aria-label="Auto Dijagnostika Lazarević – početna"><img src="slike/logo-mark.png" alt="" width="522" height="262"><span translate="no">Auto dijagnostika<em>Lazarević</em></span></a>
+<ul class="nav-links" id="nav-links"><li><a href="index.html">Početna</a></li><li><a href="usluge.html">Usluge</a></li><li><a href="cenovnik.html">Cenovnik</a></li><li><a href="konfigurator.html">Konfigurator</a></li><li><a href="galerija.html" aria-current="page">Galerija</a></li><li><a href="o-nama.html">O nama</a></li><li><a href="kontakt.html">Kontakt</a></li></ul>
+<a class="btn btn--lamp nav-call" href="tel:+381649337958"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>064 933 7958</a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Meni"><svg class="i m" aria-hidden="true"><use href="#i-menu"/></svg><svg class="i x" aria-hidden="true"><use href="#i-close"/></svg></button>
+</nav></div>
+</header>
+<main id="sadrzaj">
+<section class="page-head"><div class="wrap"><h1>Naša Galerija</h1><p>Pogledajte deo našeg rada i vozila koja smo servisirali</p></div></section>
+<section class="section"><div class="wrap">
+<div class="chips" role="group" aria-label="Filter galerije"><button class="chip" type="button" data-filter="all" aria-pressed="true">Sve <span class="count"></span></button><button class="chip" type="button" data-filter="ecu" aria-pressed="false">ECU tuning i modifikacije <span class="count"></span></button><button class="chip" type="button" data-filter="dijagnostika" aria-pressed="false">Dijagnostika i ažuriranje softvera <span class="count"></span></button></div>
+<div class="gallery" id="gallery">
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: BMW 118d | EGR OFF"><img src="slike/mini/slika1.jpg" data-full="slike/slika1.jpg" alt="BMW 118d – EGR OFF" width="560" height="746" loading="lazy"></button><figcaption><b>BMW 118d</b><span>EGR OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Opel Corsa D 1.3 CDTi EcoFlex | DPF OFF"><img src="slike/mini/slika2.jpg" data-full="slike/slika2.jpg" alt="Opel Corsa D 1.3 CDTi EcoFlex – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Opel Corsa D 1.3 CDTi EcoFlex</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Passat B6 1.9 TDI | DPF OFF"><img src="slike/mini/slika3.jpg" data-full="slike/slika3.jpg" alt="VW Passat B6 1.9 TDI – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>VW Passat B6 1.9 TDI</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Golf VI 1.6 TDI | DPF OFF"><img src="slike/mini/slika4.jpg" data-full="slike/slika4.jpg" alt="VW Golf VI 1.6 TDI – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>VW Golf VI 1.6 TDI</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Kia Ceed 1.4 CRDi | DPF OFF"><img src="slike/mini/slika5.jpg" data-full="slike/slika5.jpg" alt="Kia Ceed 1.4 CRDi – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Kia Ceed 1.4 CRDi</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Ford Fiesta MK6 1.4 TDCi | EGR OFF"><img src="slike/mini/slika6.jpg" data-full="slike/slika6.jpg" alt="Ford Fiesta MK6 1.4 TDCi – EGR OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Ford Fiesta MK6 1.4 TDCi</b><span>EGR OFF</span></figcaption></figure>
+<figure class="shot" data-category="dijagnostika"><button type="button" aria-label="Povećaj sliku: Škoda Octavia vRS | Ažuriranje softvera i mapa RNS 510"><img src="slike/mini/slika7.jpg" data-full="slike/slika7.jpg" alt="Škoda Octavia vRS – Ažuriranje softvera i mapa RNS 510" width="560" height="746" loading="lazy"></button><figcaption><b>Škoda Octavia vRS</b><span>Ažuriranje softvera i mapa RNS 510</span></figcaption></figure>
+<figure class="shot" data-category="dijagnostika"><button type="button" aria-label="Povećaj sliku: Opel Astra H | Dijagnostika i provera parametara"><img src="slike/mini/slika8.jpg" data-full="slike/slika8.jpg" alt="Opel Astra H – Dijagnostika i provera parametara" width="560" height="746" loading="lazy"></button><figcaption><b>Opel Astra H</b><span>Dijagnostika i provera parametara</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Opel Astra H 1.7 CDTi | Stage 1"><img src="slike/mini/slika9.jpg" data-full="slike/slika9.jpg" alt="Opel Astra H 1.7 CDTi – Stage 1" width="560" height="746" loading="lazy"></button><figcaption><b>Opel Astra H 1.7 CDTi</b><span>Stage 1</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: BMW 118d | EGR/DPF OFF"><img src="slike/mini/slika10.jpg" data-full="slike/slika10.jpg" alt="BMW 118d – EGR/DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>BMW 118d</b><span>EGR/DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Ford Focus 1.6 TDCi | EGR/DPF OFF"><img src="slike/mini/slika11.jpg" data-full="slike/slika11.jpg" alt="Ford Focus 1.6 TDCi – EGR/DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Ford Focus 1.6 TDCi</b><span>EGR/DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Passat B6 2.0 TDI BMP | Stage 1"><img src="slike/mini/slika12.jpg" data-full="slike/slika12.jpg" alt="VW Passat B6 2.0 TDI BMP – Stage 1" width="560" height="746" loading="lazy"></button><figcaption><b>VW Passat B6 2.0 TDI BMP</b><span>Stage 1</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Golf VI 2.0 TDI | Stage 1"><img src="slike/mini/slika13.jpg" data-full="slike/slika13.jpg" alt="VW Golf VI 2.0 TDI – Stage 1" width="560" height="746" loading="lazy"></button><figcaption><b>VW Golf VI 2.0 TDI</b><span>Stage 1</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Passat B6 2.0 TDI BKP | EGR OFF"><img src="slike/mini/slika14.jpg" data-full="slike/slika14.jpg" alt="VW Passat B6 2.0 TDI BKP – EGR OFF" width="560" height="746" loading="lazy"></button><figcaption><b>VW Passat B6 2.0 TDI BKP</b><span>EGR OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Golf V 1.9 TDI | EGR OFF"><img src="slike/mini/slika15.jpg" data-full="slike/slika15.jpg" alt="VW Golf V 1.9 TDI – EGR OFF" width="560" height="746" loading="lazy"></button><figcaption><b>VW Golf V 1.9 TDI</b><span>EGR OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Fiat Punto Evo 1.3 MultiJet | EGR/DPF Off"><img src="slike/mini/slika16.jpg" data-full="slike/slika16.jpg" alt="Fiat Punto Evo 1.3 MultiJet – EGR/DPF Off" width="560" height="746" loading="lazy"></button><figcaption><b>Fiat Punto Evo 1.3 MultiJet</b><span>EGR/DPF Off</span></figcaption></figure>
+<figure class="shot" data-category="dijagnostika"><button type="button" aria-label="Povećaj sliku: Mercedes W203 | Vraćanje EEPROM memorije na fabričke vrednosti radi adaptacije na novo vozilo"><img src="slike/mini/slika17.jpg" data-full="slike/slika17.jpg" alt="Mercedes W203 – Vraćanje EEPROM memorije na fabričke vrednosti radi adaptacije na novo vozilo" width="560" height="746" loading="lazy"></button><figcaption><b>Mercedes W203</b><span>Vraćanje EEPROM memorije na fabričke vrednosti radi adaptacije na novo vozilo</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Golf IV 1.9 TDI | HardCut Rev Limiter"><img src="slike/mini/slika18.jpg" data-full="slike/slika18.jpg" alt="VW Golf IV 1.9 TDI – HardCut Rev Limiter" width="560" height="746" loading="lazy"></button><figcaption><b>VW Golf IV 1.9 TDI</b><span>HardCut Rev Limiter</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Passat B6 2.0 TDI BMP | ECU Clone"><img src="slike/mini/slika19.jpg" data-full="slike/slika19.jpg" alt="VW Passat B6 2.0 TDI BMP – ECU Clone" width="560" height="746" loading="lazy"></button><figcaption><b>VW Passat B6 2.0 TDI BMP</b><span>ECU Clone</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Audi A6 2.5 TDI | Stage 1"><img src="slike/mini/slika20.jpg" data-full="slike/slika20.jpg" alt="Audi A6 2.5 TDI – Stage 1" width="560" height="746" loading="lazy"></button><figcaption><b>Audi A6 2.5 TDI</b><span>Stage 1</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Škoda Octavia 1.9 TDI | EGR OFF"><img src="slike/mini/slika21.jpg" data-full="slike/slika21.jpg" alt="Škoda Octavia 1.9 TDI – EGR OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Škoda Octavia 1.9 TDI</b><span>EGR OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Citroen C5 2.0 HDI | EGR/FAP OFF"><img src="slike/mini/slika22.jpg" data-full="slike/slika22.jpg" alt="Citroen C5 2.0 HDI – EGR/FAP OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Citroen C5 2.0 HDI</b><span>EGR/FAP OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Audi A3 2.0 TDI | EGR/DPF OFF"><img src="slike/mini/slika23.jpg" data-full="slike/slika23.jpg" alt="Audi A3 2.0 TDI – EGR/DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Audi A3 2.0 TDI</b><span>EGR/DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Opel Zafira 1.9 CDTi | EGR OFF"><img src="slike/mini/slika24.jpg" data-full="slike/slika24.jpg" alt="Opel Zafira 1.9 CDTi – EGR OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Opel Zafira 1.9 CDTi</b><span>EGR OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Fiat Punto Evo 1.3 MultiJet | EGR/DPF Off"><img src="slike/mini/slika25.jpg" data-full="slike/slika25.jpg" alt="Fiat Punto Evo 1.3 MultiJet – EGR/DPF Off" width="560" height="746" loading="lazy"></button><figcaption><b>Fiat Punto Evo 1.3 MultiJet</b><span>EGR/DPF Off</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Fiat Doblo 1.3 MultiJet | DPF Off"><img src="slike/mini/slika26.jpg" data-full="slike/slika26.jpg" alt="Fiat Doblo 1.3 MultiJet – DPF Off" width="560" height="746" loading="lazy"></button><figcaption><b>Fiat Doblo 1.3 MultiJet</b><span>DPF Off</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Polo 1.9 TDI | Stage 1"><img src="slike/mini/slika27.jpg" data-full="slike/slika27.jpg" alt="VW Polo 1.9 TDI – Stage 1" width="560" height="746" loading="lazy"></button><figcaption><b>VW Polo 1.9 TDI</b><span>Stage 1</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Škoda Yeti 2.0 TDI | Stage 1"><img src="slike/mini/slika28.jpg" data-full="slike/slika28.jpg" alt="Škoda Yeti 2.0 TDI – Stage 1" width="560" height="746" loading="lazy"></button><figcaption><b>Škoda Yeti 2.0 TDI</b><span>Stage 1</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Peugeot 307 1.6 HDI | DPF OFF"><img src="slike/mini/slika29.jpg" data-full="slike/slika29.jpg" alt="Peugeot 307 1.6 HDI – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Peugeot 307 1.6 HDI</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Suzuki Swift 1.2 | CAT OFF"><img src="slike/mini/slika30.jpg" data-full="slike/slika30.jpg" alt="Suzuki Swift 1.2 – CAT OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Suzuki Swift 1.2</b><span>CAT OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Tiguan 2.0 TDI | DPF OFF"><img src="slike/mini/slika31.jpg" data-full="slike/slika31.jpg" alt="VW Tiguan 2.0 TDI – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>VW Tiguan 2.0 TDI</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="dijagnostika"><button type="button" aria-label="Povećaj sliku: Mercedes Viano | Provera vozila pre kupovine"><img src="slike/mini/slika32.jpg" data-full="slike/slika32.jpg" alt="Mercedes Viano – Provera vozila pre kupovine" width="560" height="746" loading="lazy"></button><figcaption><b>Mercedes Viano</b><span>Provera vozila pre kupovine</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Passat B6 1.9 TDI | IMMO OFF"><img src="slike/mini/slika33.jpg" data-full="slike/slika33.jpg" alt="VW Passat B6 1.9 TDI – IMMO OFF" width="560" height="746" loading="lazy"></button><figcaption><b>VW Passat B6 1.9 TDI</b><span>IMMO OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Citroen C4 Cactus 1.6 BlueHDI | DPF OFF"><img src="slike/mini/slika34.jpg" data-full="slike/slika34.jpg" alt="Citroen C4 Cactus 1.6 BlueHDI – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Citroen C4 Cactus 1.6 BlueHDI</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: BMW 320d E90 | DPF OFF"><img src="slike/mini/slika35.jpg" data-full="slike/slika35.jpg" alt="BMW 320d E90 – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>BMW 320d E90</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: BMW 116d F20 | Stage 1"><img src="slike/mini/slika36.jpg" data-full="slike/slika36.jpg" alt="BMW 116d F20 – Stage 1" width="560" height="746" loading="lazy"></button><figcaption><b>BMW 116d F20</b><span>Stage 1</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Fiat Qubo 1.3 MultiJet | DPF OFF"><img src="slike/mini/slika37.jpg" data-full="slike/slika37.jpg" alt="Fiat Qubo 1.3 MultiJet – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Fiat Qubo 1.3 MultiJet</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="dijagnostika"><button type="button" aria-label="Povećaj sliku: Porsche Cayenne 4.8 V8 Turbo | Dijagnostika"><img src="slike/mini/slika38.jpg" data-full="slike/slika38.jpg" alt="Porsche Cayenne 4.8 V8 Turbo – Dijagnostika" width="560" height="746" loading="lazy"></button><figcaption><b>Porsche Cayenne 4.8 V8 Turbo</b><span>Dijagnostika</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Fiat Grande Punto | EGR OFF"><img src="slike/mini/slika39.jpg" data-full="slike/slika39.jpg" alt="Fiat Grande Punto – EGR OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Fiat Grande Punto</b><span>EGR OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Fiat Grande Punto | DPF OFF"><img src="slike/mini/slika40.jpg" data-full="slike/slika40.jpg" alt="Fiat Grande Punto – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Fiat Grande Punto</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: VW Tiguan 2.0 TDI | EGR/DPF/AdBlue OFF"><img src="slike/mini/slika41.jpg" data-full="slike/slika41.jpg" alt="VW Tiguan 2.0 TDI – EGR/DPF/AdBlue OFF" width="560" height="746" loading="lazy"></button><figcaption><b>VW Tiguan 2.0 TDI</b><span>EGR/DPF/AdBlue OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Peugeot 308 1.6 HDI | DPF OFF"><img src="slike/mini/slika42.jpg" data-full="slike/slika42.jpg" alt="Peugeot 308 1.6 HDI – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Peugeot 308 1.6 HDI</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="dijagnostika"><button type="button" aria-label="Povećaj sliku: Citroen C5 x7 | Reparacija komandi klime"><img src="slike/mini/slika43.jpg" data-full="slike/slika43.jpg" alt="Citroen C5 x7 – Reparacija komandi klime" width="560" height="746" loading="lazy"></button><figcaption><b>Citroen C5 x7</b><span>Reparacija komandi klime</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Škoda Yeti 2.0 TDI | EGR OFF"><img src="slike/mini/slika44.jpg" data-full="slike/slika44.jpg" alt="Škoda Yeti 2.0 TDI – EGR OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Škoda Yeti 2.0 TDI</b><span>EGR OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: Dacia Dokker 1.5 dCi | DPF OFF"><img src="slike/mini/slika45.jpg" data-full="slike/slika45.jpg" alt="Dacia Dokker 1.5 dCi – DPF OFF" width="560" height="746" loading="lazy"></button><figcaption><b>Dacia Dokker 1.5 dCi</b><span>DPF OFF</span></figcaption></figure>
+<figure class="shot" data-category="ecu"><button type="button" aria-label="Povećaj sliku: BMW 118d E87 | Stage 1"><img src="slike/mini/slika46.jpg" data-full="slike/slika46.jpg" alt="BMW 118d E87 – Stage 1" width="560" height="746" loading="lazy"></button><figcaption><b>BMW 118d E87</b><span>Stage 1</span></figcaption></figure>
 </div>
-</section>
-
-
-
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <span class="lightbox-arrow left">&#10094;</span>
-
-  <img class="lightbox-img" src="">
-
-  <span class="lightbox-arrow right">&#10095;</span>
-
-  <!-- Thumbnail traka -->
-  <div class="lightbox-thumbs"></div>
+<div class="more"><button class="btn btn--ink" type="button" id="more">Prikaži još</button></div>
+</div></section>
+<dialog class="lightbox" id="lightbox" aria-label="Pregled slike"><div class="lb-inner"><div class="lb-stage"><img alt=""></div><div class="lb-cap"><b></b><span></span><small></small></div></div>
+<button class="lb-btn lb-close" type="button" aria-label="Zatvori"><svg class="i" aria-hidden="true"><use href="#i-close"/></svg></button><button class="lb-btn lb-prev" type="button" aria-label="Prethodna slika"><svg class="i" aria-hidden="true"><use href="#i-left"/></svg></button><button class="lb-btn lb-next" type="button" aria-label="Sledeća slika"><svg class="i" aria-hidden="true"><use href="#i-right"/></svg></button></dialog>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><a class="foot-brand" href="index.html"><img src="slike/logo-mark.png" alt="" width="522" height="262"><b>Auto dijagnostika Lazarević</b></a>
+<p class="foot-about">Profesionalna auto dijagnostika i kodiranje za sve marke vozila. Vaš partner za elektroniku automobila.</p></div>
+<div><h3>Brzi Linkovi</h3><div class="foot-list foot-links" style="display:grid"><a href="index.html">Početna</a><a href="usluge.html">Usluge</a><a href="cenovnik.html">Cenovnik</a><a href="konfigurator.html">Konfigurator</a><a href="galerija.html">Galerija</a><a href="o-nama.html">O nama</a><a href="kontakt.html">Kontakt</a></div></div>
+<div><h3>Kontakt</h3><ul class="foot-list">
+<li><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+381649337958">+381 64 933 7958</a></li>
+<li><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:info@autodijagnostikalazarevic.rs">info@autodijagnostikalazarevic.rs</a></li>
+<li><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg><span>Ponedeljak-Petak: 15:00-20:00<br>Subota: 09:00-12:00</span></li>
+<li><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><a href="https://maps.app.goo.gl/uZ2WVoabG2B3FH9A7" target="_blank" rel="noopener">Marije Bursać 10, Lazarevac</a></li></ul></div>
 </div>
-
-
-
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>Auto Dijagnostika Lazarević</h3>
-        <p>Profesionalna auto dijagnostika i kodiranje za sve marke vozila. Vaš partner za elektroniku automobila.</p>
-        <a href="index.html"><img src="slike/Logo_sajt.png" alt="Auto Dijagnostika Lazarević" class="logo-img" style="width: 200px;margin-left: 15%; margin-top: 10px;"></a>
-      </div>
-
-      <div class="footer-section footer-links">
-        <h3>Brzi Linkovi</h3>
-        <div class="links-grid">
-          <a href="index.html">Početna</a>
-          <a href="usluge.html">Usluge</a>
-          <a href="cenovnik.html">Cenovnik</a>
-          <a href="konfigurator.html">Konfigurator</a>
-          <a href="galerija.html">Galerija</a>
-          <a href="o-nama.html">O nama</a>
-          <a href="kontakt.html">Kontakt</a>
-        </div>
-      </div>
-
-      <div class="footer-section">
-        <h3>Kontakt</h3>
-        <p><a href="tel:+381649337958"><i class="fas fa-phone" style="color: var(--amber-flame); margin-right: 10px;"></i> +381 64 933 7958</a></p>
-        <p><a href="mailto:info@autodijagnostikalazarevic.rs"><i class="fas fa-envelope" style="color: var(--amber-flame); margin-right: 10px;"></i> info@autodijagnostikalazarevic.rs</a></p>
-        <p><i class="fas fa-clock" style="color: var(--amber-flame); margin-right: 10px;"></i> Ponedeljak-Petak: 15:00-20:00</p>
-        <p><i class="fas fa-clock" style="color: var(--amber-flame); margin-right: 10px;"></i> Subota: 09:00-12:00</p>
-        <p><a href="https://maps.app.goo.gl/uZ2WVoabG2B3FH9A7" target="_blank">
-        <i class="fas fa-map-marker-alt" style="color: var(--amber-flame); margin-right: 10px;"></i>
-        Marije Bursać 10, Lazarevac</a></p>        
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <div class="powered-by">
-        <span>Powered by</span>
-      <strong>MagicMotorsport <em>Flex</em> and <em>BV-Files</em></strong>
-      </div>
-      <p>&copy; 2026 Auto Dijagnostika Lazarević. Sva prava zadržana.</p>
-    </div>
-  </footer>
-
-<script src="js/menu.js" defer></script>
-<script src="js/header-scroll.js" defer></script>
-<script src="js/animations.js" defer></script>
-<script src="js/lightbox.js" defer></script>
+<div class="foot-bottom"><span>Powered by <em>MagicMotorsport Flex</em> and <em>BV-Files</em></span><span>&copy; 2026 Auto Dijagnostika Lazarević. Sva prava zadržana.</span></div>
+</div></footer>
+<div class="callbar"><a class="btn btn--lamp" href="tel:+381649337958"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Pozovite</a><a class="btn btn--ghost" href="kontakt.html">Zakažite termin</a></div><script src="js/menu.js" defer></script>
 <script src="js/gallery.js" defer></script>
-<script src="js/gallery_pics.js" defer></script>
-
 <script src="js/language-switch.js" defer></script>
+<script src="js/svgIcons.js" defer></script>
 </body>
 </html>
