@@ -1,6 +1,273 @@
 (() => {
-  const DATA = {"tr": {"Početna": "Home", "Usluge": "Services", "Cenovnik": "Pricing", "Konfigurator": "Vehicle Configurator", "Galerija": "Gallery", "O nama": "About Us", "Kontakt": "Contact", "npr.": "etc", "© 2026 Auto Dijagnostika Lazarević. Sva prava zadržana.": "© 2026 Auto Dijagnostika Lazarević. All rights reserved.", "Cenovnik Usluga": "Service Pricing", "Transparentne cene profesionalnih dijagnostičkih i softverskih usluga": "Transparent pricing for professional diagnostics and software services", "Otvoreno – Pozovite odmah": "Open - Call us now", "Osnovna Dijagnostika": "Basic Diagnostics", "Očitavanje i brisanje grešaka, analiza parametara i savetovanje.": "Fault-code reading and clearing, parameter analysis and advice.", "DPF / EGR / AdBlue OFF": "DPF / EGR / AdBlue OFF", "Softversko gašenje sistema bez grešaka i upozorenja.": "Software deactivation of systems without fault codes or warnings.", "Stage 1": "Stage 1", "Softversko povećanje snage bez zamene postojećih delova na vozilu.": "Software-based power increase without replacing existing vehicle parts.", "Zamena i Kodiranje Senzora": "Sensor Replacement & Coding", "Lambda, MAF, NOx, ABS i ostali.": "Lambda, MAF, NOx, ABS and other sensors.", "Kodiranje ECU Modula": "ECU Module Coding", "Kodiranje, adaptacija i aktivacija funkcija.": "Coding, adaptation and feature activation.", "Mobilna Dijagnostika": "Mobile Diagnostics", "Dolazak na vašu adresu – grad i okolina.": "We come to your address — city and surrounding area.", "po dogovoru": "By arrangement", "Potrebna Vam Je Tačna Cena?": "Need an Exact Quote?", "Kontaktirajte nas i dobićete ponudu za vaše vozilo": "Contact us for a quote for your vehicle", "Kontaktirajte Nas": "Contact Us", "Naša Galerija": "Our Gallery", "Pogledajte deo našeg rada i vozila koja smo servisirali": "Take a look at our work and the vehicles we have serviced", "Sve": "All", "ECU tuning i modifikacije": "ECU tuning & modifications", "Dijagnostika i ažuriranje softvera": "Diagnostics & software updates", "Naše Usluge": "Our Services", "Specijalizovani smo za sve aspekte auto dijagnostike i programiranja elektronskih sistema vozila": "We specialise in vehicle diagnostics and electronic system programming", "Gašenje DPF / EGR / AdBlue Sistema": "DPF / EGR / AdBlue System Deactivation", "Profesionalna Dijagnostika": "Professional Diagnostics", "Dolazak Na Adresu": "On-site Service", "Rad Sa Svim Markama": "All Makes Supported", "Zašto Izabrati Nas": "Why Choose Us", "Profesionalnost i iskustvo na koje možete računati": "Professionalism and experience you can rely on", "Profesionalna Oprema": "Professional Equipment", "Brza Intervencija": "Fast Response", "Garancija Na Uslugu": "Service Warranty", "Transparentna Komunikacija": "Transparent Communication", "Povoljne Cene": "Fair Prices", "Kontaktirajte nas": "Contact us", "Kontaktirajte nas i zakažite termin": "Contact us to book an appointment", "Kontaktirajte nas i uverite se u naš profesionalan pristup": "Get in touch and experience our professional approach", "Kontaktirajte nas i zakažite dolazak na vašu lokaciju.": "Contact us to arrange a visit to your location.", "Pozovite nas i zakažite dolazak na vašu lokaciju.": "Call us to arrange a visit to your location.", "Potrebna Vam je neka od naših usluga?": "Need one of our services?", "Spremni Da Rešimo Vaš Problem": "Ready to Solve Your Problem?", "Spremni smo da pomognemo": "WE ARE READY TO HELP", "Imate problem sa vozilom?": "Having trouble with your vehicle?", "Precizna dijagnostika je prvi korak do pravog rešenja.": "Accurate diagnostics are the first step towards the right solution.", "Precizna dijagnostika.": "Accurate diagnostics.", "Pametno rešenje.": "Smart solutions.", "Precizna dijagnostika, gašenje DPF/EGR/AdBlue sistema, zamena i kodiranje komponenti. Dolazimo na vašu adresu.": "Accurate diagnostics, DPF/EGR/AdBlue system services, component replacement and coding. We come to you.", "Zakažite termin": "Book an Appointment", "Pogledajte usluge": "Explore Services", "Od problema do rešenja": "From Problem to Solution", "Bez nepotrebnog komplikovanja — prvo utvrdimo problem, zatim dogovaramo konkretno rešenje.": "No unnecessary complications — first we identify the problem, then agree on a solution.", "Poziv": "Call", "Opišete problem i dogovaramo termin.": "Tell us about the problem and we will arrange an appointment.", "Dijagnostika": "Diagnostics", "Proveravamo greške, parametre i rad sistema.": "We check fault codes, parameters and system operation.", "Analiza": "Analysis", "Objašnjavamo nalaz i predlažemo sledeći korak.": "We explain our findings and recommend the next step.", "Rešenje": "Solution", "Izvodimo dogovorenu intervenciju i proveru.": "We carry out the agreed work and verification.", "Pružamo kompletna rešenja za dijagnostiku i intervencije na svim markama vozila": "Complete diagnostic and repair solutions for vehicles of all makes", "Stručno gašenje sistema koji uzrokuju probleme. Legalno kodiranje elektronike vozila uz potpuno funkcionalno rešenje bez grešaka.": "Professional software services for problematic systems, with vehicle electronics coding and a functional solution.", "Profesionalna zamena svih vrsta senzora sa preciznim kodiranjem. Lambda sonde, MAF, senzori diferencijalnog pritiska i svi ostali senzori.": "Professional replacement and precise coding of all sensor types, including lambda, MAF and differential-pressure sensors.", "Napredna računarska dijagnostika koja otkriva sve greške u vozilu. Rad sa originalnim dijagnostičkim alatima za sve marke.": "Advanced computer diagnostics to identify vehicle faults, using professional diagnostic tools for all makes.", "Nudimo mobilnu dijagnostiku - dolazimo na vašu lokaciju sa kompletnom opremom. Bez potrebe za šlepovanjem vozila.": "We offer mobile diagnostics and come to your location with complete equipment, so towing may not be necessary.", "Programiranje i kodiranje elektronskih kontrolnih jedinica. Prilagođavanje softvera specifičnim potrebama vozila.": "Programming and coding electronic control units, with software tailored to your vehicle.", "Specijalizovani smo za sve proizvođače: VAG grupu, BMW, Mercedes, Renault, Peugeot, Citroën, Fiat i sve ostale.": "We work with all major manufacturers, including the VAG Group, BMW, Mercedes, Renault, Peugeot, Citroën and Fiat.", "Koristimo najsavremenije dijagnostičke uređaje i originalne softvere proizvođača vozila.": "We use modern diagnostic equipment and manufacturer software.", "Efikasno rešavanje problema bez nepotrebnog odlaganja. Dolazimo na vašu adresu po dogovoru.": "Efficient problem-solving without unnecessary delays. Visits are available by arrangement.", "Pružamo garanciju na sve izvršene usluge i kvalitet rada koji izvodimo.": "We stand behind the quality of our work and provide a warranty on our services.", "Jasno objašnjavamo probleme i rešenja. Nijedna intervencija bez vaše saglasnosti.": "We explain problems and solutions clearly. No work is carried out without your approval.", "Profesionalna usluga po pristupačnim cenama. Kvalitet ne mora biti skup.": "Professional service at fair prices. Quality does not have to be expensive.", "Imate problem, grešku na tabli ili želite da proverimo vozilo? Javite nam se i dogovorićemo termin koji vam odgovara.": "Have a problem, a dashboard warning, or want your vehicle checked? Contact us to arrange a convenient appointment.", "Pozovite nas": "Call Us", "Direktan kontakt": "Direct contact", "Pošaljite upit": "Send an Enquiry", "Odgovaramo u najkraćem roku": "We reply as soon as possible", "Pronađite nas": "Find Us", "Otvori mapu": "Open map", "Radno vreme": "Opening Hours", "Pon–Pet 15:00–20:00": "Mon–Fri 15:00–20:00", "Subota 09:00–12:00": "Saturday 09:00–12:00", "Auto Dijagnostika Lazarević": "Auto Dijagnostika Lazarević", "Profesionalna auto dijagnostika i kodiranje za sve marke vozila. Vaš partner za elektroniku automobila.": "Professional vehicle diagnostics and coding for all makes. Your automotive electronics partner.", "Profesionalna dijagnostika i kodiranje za sve marke vozila.": "Professional diagnostics and coding for all vehicle makes.", "Brzi Linkovi": "Quick Links", "Telefon": "Phone", "Email": "Email", "Ponedeljak-Petak: 15:00-20:00": "Monday–Friday: 15:00–20:00", "Subota: 09:00-12:00": "Saturday: 09:00–12:00", "Sva prava zadržana.": "All rights reserved.", "O Nama": "About Us", "Vaš pouzdan partner za auto dijagnostiku i elektroniku vozila": "Your trusted partner for vehicle diagnostics and automotive electronics", "Ko Smo Mi": "Who We Are", "Naš Pristup": "Our Approach", "Naša Oprema": "Our Equipment", "Originalni Dijagnostički Alati": "Original Diagnostic Tools", "ECU Programeri": "ECU Programmers", "Pristup Bazi Podataka": "Database Access", "Mobilna Dijagnostička Stanica": "Mobile Diagnostic Unit", "Zašto Baš Mi": "Why Choose Us", "Kontinuirana Edukacija": "Continuous Training", "Poverenje i Poštenje": "Trust and Integrity", "Podrška Nakon Usluge": "After-Service Support", "Fleksibilnost": "Flexibility", "Želite Da Saznate Više?": "Want to Learn More?", "Konfigurator vozila": "Vehicle Configurator", "Proverite dostupne opcije za vaše vozilo": "Check the available options for your vehicle", "Stojimo vam na raspolaganju za sva pitanja i zakazivanje termina": "We are available for questions and appointment bookings", "Pošaljite Poruku": "Send a Message", "Ime i Prezime *": "Full Name *", "Telefon *": "Phone *", "Marka i Model Vozila *": "Vehicle Make and Model *", "Opišite Problem *": "Describe the Problem *", "Pošalji Poruku": "Send Message", "Pozovite nas ili pošaljite SMS/WhatsApp/Viber": "Call us or send an SMS/WhatsApp/Viber", "Odgovaramo u roku od 24 sata": "We respond within 24 hours", "Ponedeljak - Petak: 15:00 - 20:00": "Monday–Friday: 15:00–20:00", "Nedelja: Po dogovoru": "Sunday: By arrangement", "Zakazivanje termina obavezno": "Appointments are required", "Dolazimo na vašu adresu": "We come to your address", "Pokrivamo ceo grad i okolinu. Bez dodatnih troškova dolaska u gradskoj zoni.": "We cover the city and surrounding area. No extra travel charge within the city.", "Često Postavljana Pitanja": "Frequently Asked Questions", "Da li radite sa svim markama vozila?": "Do you work with all vehicle makes?", "Koliko traje dijagnostika?": "How long does diagnostics take?", "Da li dolazite na adresu?": "Do you offer on-site service?", "Da li mogu da bude prisutan tokom dijagnostike?": "Can I be present during diagnostics?", "Kakva je garancija na vaš rad?": "What warranty do you provide?", "Kako mogu da zakažem termin?": "How can I book an appointment?", "Šta nudimo:": "What we offer:", "Potpuno softversko uklanjanje DPF/EGR/AdBlue sistema": "Software services for DPF/EGR/AdBlue systems", "Kodiranje kontrolne jedinice (ECU) bez prijave grešaka": "ECU coding without fault-code alerts", "Precizno testiranje nakon intervencije": "Precise testing after the service", "Funkcionalno rešenje koje ne ostavlja upozorenja na instrument tabli": "A functional solution without dashboard warnings", "Izmena softvera uz očuvanje performansi motora": "Software adjustments while preserving engine performance", "Vršimo zamenu i kodiranje:": "Replacement and coding services:", "Lambda sonde": "Lambda sensors", "MAF senzora": "MAF sensors", "Senzora pritiska i temperature": "Pressure and temperature sensors", "NOx senzora": "NOx sensors", "Senzora nivoa goriva": "Fuel-level sensors", "ABS i ESP senzora": "ABS and ESP sensors", "Senzora položaja radilice i bregaste osovine": "Crankshaft and camshaft position sensors", "Svih ostalih elektronskih senzora u vozilu": "All other electronic vehicle sensors", "Profesionalna Auto Dijagnostika": "Professional Vehicle Diagnostics", "Šta uključuje dijagnostika:": "What diagnostics include:", "Očitavanje grešaka iz svih kontrolnih jedinica (motor, menjač, ABS, klima, itd.)": "Reading faults from all control units (engine, transmission, ABS, climate control, etc.)", "Live data monitoring - praćenje rada senzora u realnom vremenu": "Live data monitoring — tracking sensor operation in real time", "Testiranje komponenti (aktuatori, senzori, ventili)": "Component testing (actuators, sensors, valves)", "Provera istorije grešaka": "Fault history check", "Detaljno objašnjenje problema i predlog rešenja": "Detailed explanation of the issue and recommended solution", "Servisni reset (servisni intervali, ulje, kočnice)": "Service reset (service intervals, oil, brakes)", "Mobilna Dijagnostika - Dolazak Na Adresu": "Mobile Diagnostics — We Come to You", "Prednosti mobilne dijagnostike:": "Benefits of mobile diagnostics:", "Bez potrebe za šlepovanjem vozila": "No need to tow the vehicle", "Ista kvalitetna oprema kao u radionici": "Same high-quality equipment as in a workshop", "Dijagnostika i intervencija na licu mesta": "On-site diagnostics and service", "Ušteda vremena i novca": "Save time and money", "Rad u celom gradu i okolini": "Service throughout the city and surrounding area", "Zakazivanje prema vašem rasporedu": "Appointments to suit your schedule", "Kodiranje ECU Modula i Elektronike": "ECU Module and Electronics Coding", "Naše usluge kodiranja:": "Our coding services:", "Kodiranje novih ECU modula nakon zamene": "Coding new ECU modules after replacement", "VIN prilagođavanje kontrolnih jedinica": "VIN adaptation for control units", "Aktivacija i deaktivacija funkcija u vozilu": "Activation and deactivation of vehicle features", "Prilagođavanje softvera specifičnim potrebama": "Software tailored to specific requirements", "Programiranje menjača, ABS, klima kontrolnih jedinica": "Programming transmission, ABS and climate-control units", "Podržane marke:": "Supported makes:", "VAG Grupa:": "VAG Group:", "Nemački Proizvođači:": "German Manufacturers:", "Francuski Proizvođači:": "French Manufacturers:", "Italijanski Proizvođači:": "Italian Manufacturers:", "Japanski i Korejski:": "Japanese and Korean:", "Američki Proizvođači:": "American Manufacturers:", "Koristimo profesionalne dijagnostičke alate": "We use professional diagnostic tools", "Napredni uređaji za čitanje, programiranje i kloniranje ECU modula sa podrškom za sve proizvođače čipova.": "Advanced devices for reading, programming and cloning ECU modules, supporting all major chip manufacturers.", "Direktan pristup tehničkim bazama podataka proizvođača.": "Direct access to manufacturers’ technical databases.", "Kompletna dijagnostička oprema prilagođena za rad na terenu. Dolazimo do vas sa profesionalnom opremom.": "Complete diagnostic equipment for mobile work. We come to you with professional tools.", "Mogućnost otključavanja računara serija MD1 i MG1, kao i rad sa svim dostupnim protokolima uključujući i SID212Evo.": "Support for unlocking MD1 and MG1 control units and working with available protocols, including SID212Evo.", "Powered by": "Powered by", "Sva prava zadržana": "All rights reserved", "Van radnog vremena": "Outside business hours", "Poslednji radovi": "Latest work", "Poslednjih 10 intervencija": "Latest 10 jobs", "od 2.000 RSD": "from 2,000 RSD", "od 6.000 RSD": "from 6,000 RSD", "od 10.000 RSD": "from 10,000 RSD", "od 4.000 RSD": "from 4,000 RSD", "od 5.000 RSD": "from 5,000 RSD", "064 933 7958": "064 933 7958", "Lazarevac · Otvori mapu": "Lazarevac · Open map", "Pogledajte sve usluge": "View all services", "DPF (filter čestica), EGR (recirkulacija izduvnih gasova) i AdBlue sistemi često uzrokuju ozbiljne probleme na modernim dizel vozilima. Kada ovi sistemi postanu nefunkcionalni, vozilo prelazi u bezbednosni režim ili potpuno gubi snagu.": "DPF (diesel particulate filter), EGR (exhaust gas recirculation) and AdBlue systems can cause serious issues in modern diesel vehicles. When these systems malfunction, the vehicle may enter limp mode or lose power.", "Rad sa svim markama: VAG grupa, BMW, Mercedes, Renault, Peugeot, Citroën, Fiat, Opel": "All makes supported: VAG Group, BMW, Mercedes, Renault, Peugeot, Citroën, Fiat and Opel", "Moderni automobili imaju desetine senzora koji moraju biti pravilno kodirani u vozilu nakon zamene. Nepravilno kodiranje uzrokuje greške, loše performanse ili potpunu nefunkcionalnost novog dela.": "Modern vehicles have dozens of sensors that must be coded correctly after replacement. Incorrect coding can cause faults, poor performance or prevent the new part from working properly.", "Koristimo originalne dijagnostičke alate proizvođača što garantuje potpunu kompatibilnost i ispravnost nakon zamene.": "We use manufacturer-grade diagnostic tools to ensure compatibility and correct operation after replacement.", "Kompletna računarska dijagnostika koja otkriva sve greške i probleme u vozilu. Koristimo napredne dijagnostičke alate koji omogućavaju pristup svim kontrolnim jedinicama.": "Comprehensive computer diagnostics to identify vehicle faults and issues. Our advanced tools provide access to all control units.", "Nakon dijagnostike dobijate detaljan izveštaj sa svim greškama i preporukama za dalju intervenciju.": "After diagnostics, you receive a detailed report listing faults and recommendations for further work.", "Vaše vozilo ne može da se pomeri? Bez problema. Dolazimo do vas sa kompletnom dijagnostičkom opremom.": "Can your vehicle not be moved? No problem. We come to you with complete diagnostic equipment.", "Programiranje elektronskih kontrolnih jedinica nakon zamene, prilagođavanje softvera ili aktivacija sakrivenih funkcija u vozilu.": "Programming electronic control units after replacement, software adaptation and activation of vehicle features.", "Rad Sa Svim Markama Vozila": "All Vehicle Makes", "Specijalizovani smo za sve proizvođače automobila. Koristimo originalne dijagnostičke alate za svaku marku.": "We work with all vehicle manufacturers and use suitable professional diagnostic tools for each make.", "Volkswagen, Audi, Škoda, Seat": "Volkswagen, Audi, Škoda, SEAT", "BMW, Mercedes-Benz, Opel": "BMW, Mercedes-Benz, Opel", "Renault, Peugeot, Citroën": "Renault, Peugeot, Citroën", "Fiat, Alfa Romeo, Lancia": "Fiat, Alfa Romeo, Lancia", "Toyota, Mazda, Honda, Hyundai, Kia": "Toyota, Mazda, Honda, Hyundai, Kia", "Ford, Chevrolet, Chrysler, Jeep": "Ford, Chevrolet, Chrysler, Jeep", "I sve ostale marke prisutne na našem tržištu": "And all other makes available in our market", "Email *": "Email *", "Radno Vreme": "Opening Hours", "Subota: 09:00 - 12:00": "Saturday: 09:00–12:00", "Da, radimo sa apsolutno svim markama i modelima vozila. Imamo dijagnostičku opremu i softvere za VAG grupu (VW, Audi, Škoda, Seat), BMW, Mercedes, Renault, Peugeot, Citroën, Fiat, Opel, Ford, kao i sve ostale proizvođače prisutne na našem tržištu.": "Yes, we work with virtually all vehicle makes and models. Our diagnostic equipment and software support the VAG Group (VW, Audi, Škoda, SEAT), BMW, Mercedes, Renault, Peugeot, Citroën, Fiat, Opel, Ford and other manufacturers available in our market.", "Osnovna dijagnostika traje između 10 i 20 minuta. Kompletna dijagnostika obično traje između 30 minuta i 1 sat, zavisno od složenosti problema i broja kontrolnih jedinica koje treba proveriti. Za komplikovanije slučajeve može biti potrebno više vremena.": "Basic diagnostics usually takes 10–20 minutes. A full diagnostic check typically takes 30 minutes to an hour, depending on the issue and the number of control units. Complex cases may take longer.", "Da, dolazimo na vašu adresu sa kompletnom dijagnostičkom opremom. Ova usluga je idealna ako vozilo ne može da se pomeri ili želite da izbegnete šlepanje. Pokrivamo grad i okolinu.": "Yes, we come to your address with complete diagnostic equipment. This is ideal if the vehicle cannot be moved or you want to avoid towing. We cover the city and surrounding area.", "Apsolutno. Čak to i preporučujemo. Na taj način možete direktno videti šta dijagnostika pokazuje i dobiti objašnjenje na licu mesta. Transparentnost je deo našeg pristupa.": "Absolutely. We even encourage it. You can see the diagnostic results directly and receive an explanation on site. Transparency is part of our approach.", "Pružamo garanciju na sve izvršene usluge. Ako se pojavi bilo kakav problem nakon naše intervencije, bićemo tu da ga rešimo bez dodatnih troškova. Precizni uslovi garancije zavise od vrste usluge.": "We provide a warranty on our services. If an issue related to our work arises, we will help resolve it. Exact warranty terms depend on the service performed.", "Najbrže je da nas pozovete na telefon. Možete i da popunite kontakt formu na ovoj stranici ili nam pošaljete poruku preko WhatsApp-a. Obično možemo zakazati termin u roku od 1-2 dana.": "The quickest way is to call us. You can also fill in the contact form or message us on WhatsApp. Appointments can usually be arranged within 1–2 days.", "Pozovite nas danas i dobijte brzo i profesionalno rešenje za vaše vozilo": "Call us today for a fast, professional solution for your vehicle", "Auto Dijagnostika Lazarević je specijalizovana servisna radnja fokusirana isključivo na elektronsku dijagnostiku i programiranje vozila. Naš tim čine stručnjaci sa višegodišnjim iskustvom u radu sa najsavremenijom dijagnostičkom opremom.": "Auto Dijagnostika Lazarević specialises in electronic vehicle diagnostics and programming. Our team has years of experience working with modern diagnostic equipment.", "Razumemo da je moderna elektronika vozila kompleksna, te da svaki problem zahteva precizno dijagnostikovanje i stručnu intervenciju. Zato kontinuirano ulažemo u opremu, edukaciju i praćenje najnovijih tehnologija u automobilskoj industriji.": "Modern vehicle electronics are complex, and every issue requires accurate diagnosis and professional work. We continually invest in equipment, training and the latest automotive technologies.", "Ne verujemo u \"pokušavanja\" i \"možda će proći\". Svaki problem prvo precizno dijagnostikujemo, zatim jasno objašnjavamo šta je uzrok i koje je rešenje. Tek nakon vaše saglasnosti pristupamo intervenciji.": "We do not rely on guesswork. We diagnose each issue first, explain the cause and recommend a solution. We only proceed with work after your approval.", "Radimo transparentno - bez skrivenih troškova, bez nepotrebnih intervencija. Ako problem može da se reši jeftinije, mi ćemo vam to reći.": "We work transparently, with no hidden costs or unnecessary work. If there is a more affordable solution, we will tell you.", "Koristimo isključivo profesionalnu dijagnostičku opremu": "We use professional diagnostic equipment only", "Magic Motorsport Flex": "Magic Motorsport Flex", "Automobilska industrija se brzo razvija. Novi modeli dolaze sa novom elektronikom, novim protokolima i novim sistemima. Zato kontinuirano pratimo tehničke novitete i redovno ažuriramo našu opremu.": "The automotive industry evolves quickly. New models bring new electronics, protocols and systems, so we keep up with technical developments and regularly update our equipment.", "Naš posao je izgrađen na poverenju. Mnogi naši klijenti dolaze po preporuci jer znaju da će dobiti pošten odgovor i kvalitetnu uslugu. Ne nudimo rešenja koja ne funkcionišu, ne naplaćujemo usluge koje nisu potrebne.": "Our business is built on trust. Many clients come through recommendations because they know they will receive honest advice and quality service. We do not offer ineffective solutions or charge for unnecessary work.", "Naš odnos sa klijentima ne prestaje nakon izvršene usluge. Dostupni smo za sva pitanja, nedoumice ili dodatnu podršku. Ako se pojavi bilo kakav problem, tu smo da ga rešimo.": "Our relationship with clients does not end when the service is complete. We remain available for questions and further support, and we are here to help if an issue arises.", "Razumemo da vaše vreme nije uvek usklađeno sa standardnim radnim vremenom. Zato nudimo zakazivanje po dogovoru i dolazak na vašu adresu kada vama odgovara.": "We understand that your schedule may not fit standard business hours. We offer appointments by arrangement and can come to your address at a convenient time.", "Škoda Octavia vRS | Ažuriranje softvera i mapa RNS 510": "Škoda Octavia vRS | RNS 510 software and map update", "Opel Astra H | Dijagnostika i provera parametara": "Opel Astra H | Diagnostics and parameter check", "Mercedes W203 | Vraćanje EEPROM memorije na fabričke vrednosti radi adaptacije na novo vozilo": "Mercedes W203 | Restoring EEPROM to factory values for adaptation to another vehicle", "Citroen C5 x7 | Reparacija komandi klime": "Citroën C5 X7 | Climate control panel repair", "Mercedes Viano | Provera vozila pre kupovine": "Mercedes Viano | Pre-purchase vehicle inspection", "Porsche Cayenne 4.8 V8 Turbo | Dijagnostika": "Porsche Cayenne 4.8 V8 Turbo | Diagnostics", "Citroen C4 Cactus 1.6 BlueHDI | DPF OFF": "Citroën C4 Cactus 1.6 BlueHDi | DPF OFF", "BMW 118d | EGR OFF": "BMW 118d | EGR OFF", "Opel Corsa D 1.3 CDTi EcoFlex | DPF OFF": "Opel Corsa D 1.3 CDTi EcoFlex | DPF OFF", "VW Passat B6 1.9 TDI | DPF OFF": "VW Passat B6 1.9 TDI | DPF OFF", "VW Golf VI 1.6 TDI | DPF OFF": "VW Golf VI 1.6 TDI | DPF OFF", "Kia Ceed 1.4 CRDi | DPF OFF": "Kia Ceed 1.4 CRDi | DPF OFF", "Ford Fiesta MK6 1.4 TDCi | EGR OFF": "Ford Fiesta MK6 1.4 TDCi | EGR OFF", "Opel Astra H 1.7 CDTi | Stage 1": "Opel Astra H 1.7 CDTi | Stage 1", "BMW 118d | EGR/DPF OFF": "BMW 118d | EGR/DPF OFF", "Ford Focus 1.6 TDCi | EGR/DPF OFF": "Ford Focus 1.6 TDCi | EGR/DPF OFF", "VW Passat B6 2.0 TDI BMP | Stage 1": "VW Passat B6 2.0 TDI BMP | Stage 1", "VW Golf VI 2.0 TDI | Stage 1": "VW Golf VI 2.0 TDI | Stage 1", "VW Passat B6 2.0 TDI BKP | EGR OFF": "VW Passat B6 2.0 TDI BKP | EGR OFF", "VW Golf V 1.9 TDI | EGR OFF": "VW Golf V 1.9 TDI | EGR OFF", "Fiat Punto Evo 1.3 MultiJet | EGR/DPF Off": "Fiat Punto Evo 1.3 MultiJet | EGR/DPF Off", "VW Golf IV 1.9 TDI | HardCut Rev Limiter": "VW Golf IV 1.9 TDI | HardCut Rev Limiter", "VW Passat B6 2.0 TDI BMP | ECU Clone": "VW Passat B6 2.0 TDI BMP | ECU cloning", "Audi A6 2.5 TDI | Stage 1": "Audi A6 2.5 TDI | Stage 1", "Škoda Octavia 1.9 TDI | EGR OFF": "Škoda Octavia 1.9 TDI | EGR OFF", "Citroen C5 2.0 HDI | EGR/FAP OFF": "Citroën C5 2.0 HDI | EGR/FAP OFF", "Audi A3 2.0 TDI | EGR/DPF OFF": "Audi A3 2.0 TDI | EGR/DPF OFF", "Opel Zafira 1.9 CDTi | EGR OFF": "Opel Zafira 1.9 CDTi | EGR OFF", "Fiat Doblo 1.3 MultiJet | DPF Off": "Fiat Doblo 1.3 MultiJet | DPF Off", "VW Polo 1.9 TDI | Stage 1": "VW Polo 1.9 TDI | Stage 1", "Škoda Yeti 2.0 TDI | Stage 1": "Škoda Yeti 2.0 TDI | Stage 1", "Peugeot 307 1.6 HDI | DPF OFF": "Peugeot 307 1.6 HDi | DPF OFF", "Suzuki Swift 1.2 | CAT OFF": "Suzuki Swift 1.2 | CAT OFF", "VW Tiguan 2.0 TDI | DPF OFF": "VW Tiguan 2.0 TDI | DPF OFF", "VW Passat B6 1.9 TDI | IMMO OFF": "VW Passat B6 1.9 TDI | IMMO OFF", "BMW 320d E90 | DPF OFF": "BMW 320d E90 | DPF OFF", "BMW 116d F20 | Stage 1": "BMW 116d F20 | Stage 1", "Fiat Qubo 1.3 MultiJet | DPF OFF": "Fiat Qubo 1.3 MultiJet | DPF OFF", "Fiat Grande Punto | EGR OFF": "Fiat Grande Punto | EGR OFF", "Fiat Grande Punto | DPF OFF": "Fiat Grande Punto | DPF OFF", "VW Tiguan 2.0 TDI | EGR/DPF/AdBlue OFF": "VW Tiguan 2.0 TDI | EGR/DPF/AdBlue OFF", "Peugeot 308 1.6 HDI | DPF OFF": "Peugeot 308 1.6 HDi | DPF OFF", "Škoda Yeti 2.0 TDI | EGR OFF": "Škoda Yeti 2.0 TDI | EGR OFF", "Dacia Dokker 1.5 dCi | DPF OFF": "Dacia Dokker 1.5 dCi | DPF OFF", "BMW 118d E87 | Stage 1": "BMW 118d E87 | Stage 1", "Preskoči na sadržaj": "Skip to content", "Auto dijagnostika": "Auto diagnostics", "Pozovite": "Call us", "Pozovite 064 933 7958": "Call 064 933 7958", "Van radnog vremena – Pošaljite upit": "Closed – send us an inquiry", "Svetli lampica na tabli?": "Warning light on the dash?", "Auto dijagnostika i kodiranje. Očitamo grešku, objasnimo šta je uzrok i tek uz vašu saglasnost radimo intervenciju.": "Vehicle diagnostics and coding. We read the fault, explain the cause, and only carry out work with your consent.", "Sve marke vozila": "All vehicle makes", "Dolazimo na adresu": "We come to your address", "Garancija na uslugu": "Service warranty", "Dodirnite lampicu koja svetli na vašoj tabli.": "Tap the warning light that is on in your dashboard.", "Grejači": "Glow plugs", "Servis": "Service", "Ulje": "Oil", "Žuta lampica: upozorenje": "Amber light: warning", "Žuta lampica: podsetnik": "Amber light: reminder", "Crvena lampica: zaustavite vozilo": "Red light: stop the vehicle", "Šta to obično znači": "What it usually means", "Šta radimo": "What we do", "Računar vozila je zabeležio grešku u radu motora ili emisije. Uzrok može biti bilo šta, od senzora do ubrizgavanja, i vidi se tek iz očitavanja.": "The vehicle computer has logged a fault in the engine or emissions system. The cause can be anything from a sensor to injection, and only shows up in a diagnostic read-out.", "Očitamo sve kontrolne jedinice, pratimo parametre uživo i objasnimo nalaz pre bilo kakve intervencije.": "We read all control units, watch live parameters and explain the findings before any work.", "Osnovna dijagnostika od 2.000 RSD": "Basic diagnostics from 2,000 RSD", "Filter čestica se puni čađi i ne uspeva da se regeneriše. Vozilo može preći u režim smanjene snage.": "The particulate filter is filling with soot and cannot regenerate. The vehicle may drop into reduced-power mode.", "Proverimo stanje i parametre filtera. Ako vi odlučite, nudimo softversko gašenje DPF sistema bez grešaka.": "We check the filter's condition and parameters. If you decide so, we offer software deactivation of the DPF system without fault codes.", "DPF / EGR / AdBlue OFF od 6.000 RSD": "DPF / EGR / AdBlue OFF from 6,000 RSD", "Sistem za AdBlue prijavljuje grešku, na primer zbog senzora. Neka vozila nakon upozorenja odbijaju da upale motor.": "The AdBlue system is reporting a fault, for example because of a sensor. Some vehicles refuse to start after the warning.", "Dijagnostika sistema, zamena i kodiranje senzora, ili softversko gašenje sistema.": "System diagnostics, sensor replacement and coding, or software deactivation of the system.", "Elektronika upravljanja snagom motora je u režimu zaštite i vozilo gubi snagu. Najčešće je u pitanju senzor ili aktuator.": "The engine power control electronics are in protection mode and the vehicle loses power. It is most often a sensor or actuator.", "Očitamo grešku i utvrdimo koja komponenta pravi problem, pa predložimo sledeći korak.": "We read the fault, find which component is causing it, and suggest the next step.", "Sistem protiv blokade točkova je isključen. Obične kočnice rade, ali ABS i ESP ne pomažu.": "The anti-lock system is switched off. Normal brakes work, but ABS and ESP do not assist.", "Očitamo grešku, proverimo senzore točkova, a po potrebi ih zamenimo i kodiramo.": "We read the fault, check the wheel sensors and, if needed, replace and code them.", "Zamena i kodiranje senzora od 4.000 RSD": "Sensor replacement and coding from 4,000 RSD", "Kod dizel motora sistem za zagrevanje ne radi kako treba. Vozilo teže pali na hladno.": "On diesel engines the pre-heating system is not working properly. The vehicle starts harder when cold.", "Dijagnostika sistema i očitavanje grešaka, pa utvrđujemo šta treba zameniti.": "System diagnostics and fault reading, then we determine what needs replacing.", "Servisni interval je istekao ili ga treba resetovati nakon zamene ulja ili kočnica.": "The service interval has expired or needs to be reset after an oil or brake change.", "Servisni reset (servisni intervali, ulje, kočnice) radimo u okviru dijagnostike.": "We do service resets (service intervals, oil, brakes) as part of diagnostics.", "Pozovite za cenu": "Call for a price", "Crvena lampica znači da vozilo treba zaustaviti čim je bezbedno. Vožnja sa niskim pritiskom ulja može uništiti motor.": "A red light means the vehicle should be stopped as soon as it is safe. Driving with low oil pressure can destroy the engine.", "Ako vozilo ne sme da se vozi, dolazimo na vašu adresu i utvrđujemo da li je kvar mehanički ili u senzoru.": "If the vehicle must not be driven, we come to your address and determine whether the fault is mechanical or in the sensor.", "Dolazak na adresu po dogovoru": "On-site visit by arrangement", "Pružamo kompletna rešenja za dijagnostiku i intervencije na svim markama vozila.": "We provide complete diagnostics and intervention solutions for all vehicle makes.", "Ceo cenovnik": "Full price list", "Cela galerija": "Full gallery", "Prikaži još": "Show more", "Zašto izabrati nas": "Why choose us", "Profesionalnost i iskustvo na koje možete računati.": "Professionalism and experience you can rely on.", "Vozilo ne može da se pomeri?": "Vehicle can't be moved?", "Ponedeljak-Petak": "Monday-Friday", "Subota": "Saturday", "Nedelja": "Sunday", "Po dogovoru": "By arrangement", "Radimo sa svim markama:": "We work with all makes:", "VAG grupa, BMW, Mercedes, Renault, Peugeot, Citroën, Fiat, Opel i sve ostale.": "VAG group, BMW, Mercedes, Renault, Peugeot, Citroën, Fiat, Opel and all others.", "Za potvrdu kompatibilnosti kontaktirajte nas.": "Contact us to confirm compatibility.", "Senzori": "Sensors", "Mobilna dijagnostika": "Mobile diagnostics", "Kodiranje ECU modula": "ECU module coding", "Podržane marke": "Supported makes", "Softversko povećanje snage": "Software power increase", "Rad bez zamene postojećih delova": "No replacement of existing parts", "Usluga": "Service", "Šta uključuje": "What is included", "Cena": "Price", "Za tačnu ponudu navedite marku, model i godište vozila.": "For an exact quote, tell us the make, model and year of your vehicle.", "Reparacija komandi klime": "Climate control panel repair", "Vraćanje EEPROM memorije na fabričke vrednosti radi adaptacije na novo vozilo": "Restoring EEPROM to factory values for adaptation to another vehicle", "Provera vozila pre kupovine": "Pre-purchase vehicle inspection", "Dijagnostika i provera parametara": "Diagnostics and parameter check", "Ažuriranje softvera i mapa RNS 510": "RNS 510 software and map update", "Prethodni radovi": "Previous work", "Sledeći radovi": "Next work", "Meni": "Menu", "Filter galerije": "Gallery filter", "Preskoči": "Skip", "Citroen C5 x7": "Citroën C5 X7", "Citroen C4 Cactus 1.6 BlueHDI": "Citroën C4 Cactus 1.6 BlueHDi", "ECU Clone": "ECU cloning", "Citroen C5 2.0 HDI": "Citroën C5 2.0 HDI", "Peugeot 307 1.6 HDI": "Peugeot 307 1.6 HDi", "Peugeot 308 1.6 HDI": "Peugeot 308 1.6 HDi"}, "attrs": {"placeholder": {"Ime i Prezime": "Full Name", "Telefon": "Phone", "Email": "Email address", "npr. VW Golf 7 1.6 TDI": "e.g. VW Golf 7 1.6 TDI", "Detaljno opišite problem sa vozilom...": "Describe the problem with your vehicle..."}, "aria-label": {"Poslednji radovi": "Latest work", "Prethodni radovi": "Previous work", "Sledeći radovi": "Next work", "Meni": "Menu", "Filter galerije": "Gallery filter", "Glavna navigacija": "Main navigation", "Auto Dijagnostika Lazarević – početna": "Auto Dijagnostika Lazarević – home", "Zatvori": "Close", "Prethodna slika": "Previous image", "Sledeća slika": "Next image", "Pregled slike": "Image viewer"}}};
-(() => {
+  const DATA = {
+    "tr": {
+      // --- OSNOVNI PREVODI SAJTA ---
+      "Početna": "Home", 
+      "Usluge": "Services", 
+      "Cenovnik": "Pricing", 
+      "Konfigurator": "Vehicle Configurator", 
+      "Galerija": "Gallery", 
+      "O nama": "About Us", 
+      "Kontakt": "Contact", 
+      "npr.": "etc", 
+      "© 2026 Auto Dijagnostika Lazarević. Sva prava zadržana.": "© 2026 Auto Dijagnostika Lazarević. All rights reserved.", 
+      "Cenovnik Usluga": "Service Pricing", 
+      "Transparentne cene profesionalnih dijagnostičkih i softverskih usluga": "Transparent pricing for professional diagnostics and software services", 
+      "Otvoreno – Pozovite odmah": "Open - Call us now", 
+      "Osnovna Dijagnostika": "Basic Diagnostics", 
+      "Očitavanje i brisanje grešaka, analiza parametara i savetovanje.": "Fault-code reading and clearing, parameter analysis and advice.", 
+      "DPF / EGR / AdBlue OFF": "DPF / EGR / AdBlue OFF", 
+      "Softversko gašenje sistema bez grešaka i upozorenja.": "Software deactivation of systems without fault codes or warnings.", 
+      "Stage 1": "Stage 1", 
+      "Softversko povećanje snage bez zamene postojećih delova na vozilu.": "Software-based power increase without replacing existing vehicle parts.", 
+      "Zamena i Kodiranje Senzora": "Sensor Replacement & Coding", 
+      "Lambda, MAF, NOx, ABS i ostali.": "Lambda, MAF, NOx, ABS and other sensors.", 
+      "Kodiranje ECU Modula": "ECU Module Coding", 
+      "Kodiranje, adaptacija i aktivacija funkcija.": "Coding, adaptation and feature activation.", 
+      "Mobilna Dijagnostika": "Mobile Diagnostics", 
+      "Dolazak na vašu adresu – grad i okolina.": "We come to your address — city and surrounding area.", 
+      "po dogovoru": "By arrangement", 
+      "Potrebna Vam Je Tačna Cena?": "Need an Exact Quote?", 
+      "Kontaktirajte nas i dobićete ponudu za vaše vozilo": "Contact us for a quote for your vehicle", 
+      "Kontaktirajte Nas": "Contact Us", 
+      "Naša Galerija": "Our Gallery", 
+      "Pogledajte deo našeg rada i vozila koja smo servisirali": "Take a look at our work and the vehicles we have serviced", 
+      "Sve": "All", 
+      "ECU tuning i modifikacije": "ECU tuning & modifications", 
+      "Dijagnostika i ažuriranje softvera": "Diagnostics & software updates", 
+      "Naše Usluge": "Our Services", 
+      "Specijalizovani smo za sve aspekte auto dijagnostike i programiranja elektronskih sistema vozila": "We specialise in vehicle diagnostics and electronic system programming", 
+      "Gašenje DPF / EGR / AdBlue Sistema": "DPF / EGR / AdBlue System Deactivation", 
+      "Profesionalna Dijagnostika": "Professional Diagnostics", 
+      "Dolazak Na Adresu": "On-site Service", 
+      "Rad Sa Svim Markama": "All Makes Supported", 
+      "Zašto Izabrati Nas": "Why Choose Us", 
+      "Profesionalnost i iskustvo na koje možete računati": "Professionalism and experience you can rely on", 
+      "Profesionalna Oprema": "Professional Equipment", 
+      "Brza Intervencija": "Fast Response", 
+      "Garancija Na Uslugu": "Service Warranty", 
+      "Transparentna Komunikacija": "Transparent Communication", 
+      "Povoljne Cene": "Fair Prices", 
+      "Kontaktirajte nas": "Contact us", 
+      "Kontaktirajte nas i zakažite termin": "Contact us to book an appointment", 
+      "Kontaktirajte nas i uverite se u naš profesionalan pristup": "Get in touch and experience our professional approach", 
+      "Kontaktirajte nas i zakažite dolazak na vašu lokaciju.": "Contact us to arrange a visit to your location.", 
+      "Pozovite nas i zakažite dolazak na vašu lokaciju.": "Call us to arrange a visit to your location.", 
+      "Potrebna Vam je neka od naših usluga?": "Need one of our services?", 
+      "Spremni Da Rešimo Vaš Problem": "Ready to Solve Your Problem?", 
+      "Spremni smo da pomognemo": "WE ARE READY TO HELP", 
+      "Imate problem sa vozilom?": "Having trouble with your vehicle?", 
+      "Precizna dijagnostika je prvi korak do pravog rešenja.": "Accurate diagnostics are the first step towards the right solution.", 
+      "Precizna dijagnostika.": "Accurate diagnostics.", 
+      "Pametno rešenje.": "Smart solutions.", 
+      "Precizna dijagnostika, gašenje DPF/EGR/AdBlue sistema, zamena i kodiranje komponenti. Dolazimo na vašu adresu.": "Accurate diagnostics, DPF/EGR/AdBlue system services, component replacement and coding. We come to you.", 
+      "Zakažite termin": "Book an Appointment", 
+      "Pogledajte usluge": "Explore Services", 
+      "Od problema do rešenja": "From Problem to Solution", 
+      "Bez nepotrebnog komplikovanja — prvo utvrdimo problem, zatim dogovaramo konkretno rešenje.": "No unnecessary complications — first we identify the problem, then agree on a solution.", 
+      "Poziv": "Call", 
+      "Opišete problem i dogovaramo termin.": "Tell us about the problem and we will arrange an appointment.", 
+      "Dijagnostika": "Diagnostics", 
+      "Proveravamo greške, parametre i rad sistema.": "We check fault codes, parameters and system operation.", 
+      "Analiza": "Analysis", 
+      "Objašnjavamo nalaz i predlažemo sledeći korak.": "We explain our findings and recommend the next step.", 
+      "Rešenje": "Solution", 
+      "Izvodimo dogovorenu intervenciju i proveru.": "We carry out the agreed work and verification.", 
+      "Pružamo kompletna rešenja za dijagnostiku i intervencije na svim markama vozila": "Complete diagnostic and repair solutions for vehicles of all makes", 
+      "Stručno gašenje sistema koji uzrokuju probleme. Legalno kodiranje elektronike vozila uz potpuno funkcionalno rešenje bez grešaka.": "Professional software services for problematic systems, with vehicle electronics coding and a functional solution.", 
+      "Profesionalna zamena svih vrsta senzora sa preciznim kodiranjem. Lambda sonde, MAF, senzori diferencijalnog pritiska i svi ostali senzori.": "Professional replacement and precise coding of all sensor types, including lambda, MAF and differential-pressure sensors.", 
+      "Napredna računarska dijagnostika koja otkriva sve greške u vozilu. Rad sa originalnim dijagnostičkim alatima za sve marke.": "Advanced computer diagnostics to identify vehicle faults, using professional diagnostic tools for all makes.", 
+      "Nudimo mobilnu dijagnostiku - dolazimo na vašu lokaciju sa kompletnom opremom. Bez potrebe za šlepovanjem vozila.": "We offer mobile diagnostics and come to your location with complete equipment, so towing may not be necessary.", 
+      "Programiranje i kodiranje elektronskih kontrolnih jedinica. Prilagođavanje softvera specifičnim potrebama vozila.": "Programming and coding electronic control units, with software tailored to your vehicle.", 
+      "Specijalizovani smo za sve proizvođače: VAG grupu, BMW, Mercedes, Renault, Peugeot, Citroën, Fiat i sve ostale.": "We work with all major manufacturers, including the VAG Group, BMW, Mercedes, Renault, Peugeot, Citroën and Fiat.", 
+      "Koristimo najsavremenije dijagnostičke uređaje i originalne softvere proizvođača vozila.": "We use modern diagnostic equipment and manufacturer software.", 
+      "Efikasno rešavanje problema bez nepotrebnog odlaganja. Dolazimo na vašu adresu po dogovoru.": "Efficient problem-solving without unnecessary delays. Visits are available by arrangement.", 
+      "Pružamo garanciju na sve izvršene usluge i kvalitet rada koji izvodimo.": "We stand behind the quality of our work and provide a warranty on our services.", 
+      "Jasno objašnjavamo probleme i rešenja. Nijedna intervencija bez vaše saglasnosti.": "We explain problems and solutions clearly. No work is carried out without your approval.", 
+      "Profesionalna usluga po pristupačnim cenama. Kvalitet ne mora biti skup.": "Professional service at fair prices. Quality does not have to be expensive.", 
+      "Imate problem, grešku na tabli ili želite da proverimo vozilo? Javite nam se i dogovorićemo termin koji vam odgovara.": "Have a problem, a dashboard warning, or want your vehicle checked? Contact us to arrange a convenient appointment.", 
+      "Pozovite nas": "Call Us", 
+      "Direktan kontakt": "Direct contact", 
+      "Pošaljite upit": "Send an Enquiry", 
+      "Odgovaramo u najkraćem roku": "We reply as soon as possible", 
+      "Pronađite nas": "Find Us", 
+      "Otvori mapu": "Open map", 
+      "Radno vreme": "Opening Hours", 
+      "Pon–Pet 15:00–20:00": "Mon–Fri 15:00–20:00", 
+      "Subota 09:00–12:00": "Saturday 09:00–12:00", 
+      "Auto Dijagnostika Lazarević": "Auto Dijagnostika Lazarević", 
+      "Profesionalna auto dijagnostika i kodiranje za sve marke vozila. Vaš partner za elektroniku automobila.": "Professional vehicle diagnostics and coding for all makes. Your automotive electronics partner.", 
+      "Profesionalna dijagnostika i kodiranje za sve marke vozila.": "Professional diagnostics and coding for all vehicle makes.", 
+      "Brzi Linkovi": "Quick Links", 
+      "Telefon": "Phone", 
+      "Email": "Email", 
+      "Ponedeljak-Petak: 15:00-20:00": "Monday–Friday: 15:00–20:00", 
+      "Subota: 09:00-12:00": "Saturday: 09:00–12:00", 
+      "Sva prava zadržana.": "All rights reserved.", 
+      "O Nama": "About Us", 
+      "Vaš pouzdan partner za auto dijagnostiku i elektroniku vozila": "Your trusted partner for vehicle diagnostics and automotive electronics", 
+      "Ko Smo Mi": "Who We Are", 
+      "Naš Pristup": "Our Approach", 
+      "Naša Oprema": "Our Equipment", 
+      "Originalni Dijagnostički Alati": "Original Diagnostic Tools", 
+      "ECU Programeri": "ECU Programmers", 
+      "Pristup Bazi Podataka": "Database Access", 
+      "Mobilna Dijagnostička Stanica": "Mobile Diagnostic Unit", 
+      "Zašto Baš Mi": "Why Choose Us", 
+      "Kontinuirana Edukacija": "Continuous Training", 
+      "Poverenje i Poštenje": "Trust and Integrity", 
+      "Podrška Nakon Usluge": "After-Service Support", 
+      "Fleksibilnost": "Flexibility", 
+      "Želite Da Saznate Više?": "Want to Learn More?", 
+      "Konfigurator vozila": "Vehicle Configurator", 
+      "Proverite dostupne opcije za vaše vozilo": "Check the available options for your vehicle", 
+      "Stojimo vam na raspolaganju za sva pitanja i zakazivanje termina": "We are available for questions and appointment bookings", 
+      "Pošaljite Poruku": "Send a Message", 
+      "Ime i Prezime *": "Full Name *", 
+      "Telefon *": "Phone *", 
+      "Marka i Model Vozila *": "Vehicle Make and Model *", 
+      "Opišite Problem *": "Describe the Problem *", 
+      "Pošalji Poruku": "Send Message", 
+      "Pozovite nas ili pošaljite SMS/WhatsApp/Viber": "Call us or send an SMS/WhatsApp/Viber", 
+      "Odgovaramo u roku od 24 sata": "We respond within 24 hours", 
+      "Ponedeljak - Petak: 15:00 - 20:00": "Monday–Friday: 15:00–20:00", 
+      "Nedelja: Po dogovoru": "Sunday: By arrangement", 
+      "Zakazivanje termina obavezno": "Appointments are required", 
+      "Dolazimo na vašu adresu": "We come to your address", 
+      "Pokrivamo ceo grad i okolinu. Bez dodatnih troškova dolaska u gradskoj zoni.": "We cover the city and surrounding area. No extra travel charge within the city.", 
+      "Često Postavljana Pitanja": "Frequently Asked Questions", 
+      "Da li radite sa svim markama vozila?": "Do you work with all vehicle makes?", 
+      "Koliko traje dijagnostika?": "How long does diagnostics take?", 
+      "Da li dolazite na adresu?": "Do you offer on-site service?", 
+      "Da li mogu da bude prisutan tokom dijagnostike?": "Can I be present during diagnostics?", 
+      "Kakva je garancija na vaš rad?": "What warranty do you provide?", 
+      "Kako mogu da zakažem termin?": "How can I book an appointment?", 
+      "Šta nudimo:": "What we offer:", 
+      "Potpuno softversko uklanjanje DPF/EGR/AdBlue sistema": "Software services for DPF/EGR/AdBlue systems", 
+      "Kodiranje kontrolne jedinice (ECU) bez prijave grešaka": "ECU coding without fault-code alerts", 
+      "Precizno testiranje nakon intervencije": "Precise testing after the service", 
+      "Funkcionalno rešenje koje ne ostavlja upozorenja na instrument tabli": "A functional solution without dashboard warnings", 
+      "Izmena softvera uz očuvanje performansi motora": "Software adjustments while preserving engine performance", 
+      "Vršimo zamenu i kodiranje:": "Replacement and coding services:", 
+      "Lambda sonde": "Lambda sensors", 
+      "MAF senzora": "MAF sensors", 
+      "Senzora pritiska i temperature": "Pressure and temperature sensors", 
+      "NOx senzora": "NOx sensors", 
+      "Senzora nivoa goriva": "Fuel-level sensors", 
+      "ABS i ESP senzora": "ABS and ESP sensors", 
+      "Senzora položaja radilice i bregaste osovine": "Crankshaft and camshaft position sensors", 
+      "Svih ostalih elektronskih senzora u vozilu": "All other electronic vehicle sensors", 
+      "Profesionalna Auto Dijagnostika": "Professional Vehicle Diagnostics", 
+      "Šta uključuje dijagnostika:": "What diagnostics include:", 
+      "Očitavanje grešaka iz svih kontrolnih jedinica (motor, menjač, ABS, klima, itd.)": "Reading faults from all control units (engine, transmission, ABS, climate control, etc.)", 
+      "Live data monitoring - praćenje rada senzora u realnom vremenu": "Live data monitoring — tracking sensor operation in real time", 
+      "Testiranje komponenti (aktuatori, senzori, ventili)": "Component testing (actuators, sensors, valves)", 
+      "Provera istorije grešaka": "Fault history check", 
+      "Detaljno objašnjenje problema i predlog rešenja": "Detailed explanation of the issue and recommended solution", 
+      "Servisni reset (servisni intervali, ulje, kočnice)": "Service reset (service intervals, oil, brakes)", 
+      "Mobilna Dijagnostika - Dolazak Na Adresu": "Mobile Diagnostics — We Come to You", 
+      "Prednosti mobilne dijagnostike:": "Benefits of mobile diagnostics:", 
+      "Bez potrebe za šlepovanjem vozila": "No need to tow the vehicle", 
+      "Ista kvalitetna oprema kao u radionici": "Same high-quality equipment as in a workshop", 
+      "Dijagnostika i intervencija na licu mesta": "On-site diagnostics and service", 
+      "Ušteda vremena i novca": "Save time and money", 
+      "Rad u celom gradu i okolini": "Service throughout the city and surrounding area", 
+      "Zakazivanje prema vašem rasporedu": "Appointments to suit your schedule", 
+      "Kodiranje ECU Modula i Elektronike": "ECU Module and Electronics Coding", 
+      "Naše usluge kodiranja:": "Our coding services:", 
+      "Kodiranje novih ECU modula nakon zamene": "Coding new ECU modules after replacement", 
+      "VIN prilagođavanje kontrolnih jedinica": "VIN adaptation for control units", 
+      "Aktivacija i deaktivacija funkcija u vozilu": "Activation and deactivation of vehicle features", 
+      "Prilagođavanje softvera specifičnim potrebama": "Software tailored to specific requirements", 
+      "Programiranje menjača, ABS, klima kontrolnih jedinica": "Programming transmission, ABS and climate-control units", 
+      "Podržane marke:": "Supported makes:", 
+      "VAG Grupa:": "VAG Group:", 
+      "Nemački Proizvođači:": "German Manufacturers:", 
+      "Francuski Proizvođači:": "French Manufacturers:", 
+      "Italijanski Proizvođači:": "Italian Manufacturers:", 
+      "Japanski i Korejski:": "Japanese and Korean:", 
+      "Američki Proizvođači:": "American Manufacturers:", 
+      "Koristimo profesionalne dijagnostičke alate": "We use professional diagnostic tools", 
+      "Napredni uređaji za čitanje, programiranje i kloniranje ECU modula sa podrškom za sve proizvođače čipova.": "Advanced devices for reading, programming and cloning ECU modules, supporting all major chip manufacturers.", 
+      "Direktan pristup tehničkim bazama podataka proizvođača.": "Direct access to manufacturers’ technical databases.", 
+      "Kompletna dijagnostička oprema prilagođena za rad na terenu. Dolazimo do vas sa profesionalnom opremom.": "Complete diagnostic equipment for mobile work. We come to you with professional tools.", 
+      "Mogućnost otključavanja računara serija MD1 i MG1, kao i rad sa svim dostupnim protokolima uključujući i SID212Evo.": "Support for unlocking MD1 and MG1 control units and working with available protocols, including SID212Evo.", 
+      "Powered by": "Powered by", 
+      "Sva prava zadržana": "All rights reserved", 
+      "Van radnog vremena": "Outside business hours", 
+      "Poslednji radovi": "Latest work", 
+      "Poslednjih 10 intervencija": "Latest 10 jobs", 
+      "od 2.000 RSD": "from 2,000 RSD", 
+      "od 6.000 RSD": "from 6,000 RSD", 
+      "od 10.000 RSD": "from 10,000 RSD", 
+      "od 4.000 RSD": "from 4,000 RSD", 
+      "od 5.000 RSD": "from 5,000 RSD", 
+      "064 933 7958": "064 933 7958", 
+      "Lazarevac · Otvori mapu": "Lazarevac · Open map", 
+      "Pogledajte sve usluge": "View all services", 
+      "DPF (filter čestica), EGR (recirkulacija izduvnih gasova) i AdBlue sistemi često uzrokuju ozbiljne probleme na modernim dizel vozilima. Kada ovi sistemi postanu nefunkcionalni, vozilo prelazi u bezbednosni režim ili potpuno gubi snagu.": "DPF (diesel particulate filter), EGR (exhaust gas recirculation) and AdBlue systems can cause serious issues in modern diesel vehicles. When these systems malfunction, the vehicle may enter limp mode or lose power.", 
+      "Rad sa svim markama: VAG grupa, BMW, Mercedes, Renault, Peugeot, Citroën, Fiat, Opel": "All makes supported: VAG Group, BMW, Mercedes, Renault, Peugeot, Citroën, Fiat and Opel", 
+      "Moderni automobili imaju desetine senzora koji moraju biti pravilno kodirani u vozilu nakon zamene. Nepravilno kodiranje uzrokuje greške, loše performanse ili potpunu nefunkcionalnost novog dela.": "Modern vehicles have dozens of sensors that must be coded correctly after replacement. Incorrect coding can cause faults, poor performance or prevent the new part from working properly.", 
+      "Koristimo originalne dijagnostičke alate proizvođača što garantuje potpunu kompatibilnost i ispravnost nakon zamene.": "We use manufacturer-grade diagnostic tools to ensure compatibility and correct operation after replacement.", 
+      "Kompletna računarska dijagnostika koja otkriva sve greške i probleme u vozilu. Koristimo napredne dijagnostičke alate koji omogućavaju pristup svim kontrolnim jedinicama.": "Comprehensive computer diagnostics to identify vehicle faults and issues. Our advanced tools provide access to all control units.", 
+      "Nakon dijagnostike dobijate detaljan izveštaj sa svim greškama i preporukama za dalju intervenciju.": "After diagnostics, you receive a detailed report listing faults and recommendations for further work.", 
+      "Vaše vozilo ne može da se pomeri? Bez problema. Dolazimo do vas sa kompletnom dijagnostičkom opremom.": "Can your vehicle not be moved? No problem. We come to you with complete diagnostic equipment.", 
+      "Programiranje elektronskih kontrolnih jedinica nakon zamene, prilagođavanje softvera ili aktivacija sakrivenih funkcija u vozilu.": "Programming electronic control units after replacement, software adaptation and activation of vehicle features.", 
+      "Rad Sa Svim Markama Vozila": "All Vehicle Makes", 
+      "Specijalizovani smo za sve proizvođače automobila. Koristimo originalne dijagnostičke alate za svaku marku.": "We work with all vehicle manufacturers and use suitable professional diagnostic tools for each make.", 
+      "Volkswagen, Audi, Škoda, Seat": "Volkswagen, Audi, Škoda, SEAT", 
+      "BMW, Mercedes-Benz, Opel": "BMW, Mercedes-Benz, Opel", 
+      "Renault, Peugeot, Citroën": "Renault, Peugeot, Citroën", 
+      "Fiat, Alfa Romeo, Lancia": "Fiat, Alfa Romeo, Lancia", 
+      "Toyota, Mazda, Honda, Hyundai, Kia": "Toyota, Mazda, Honda, Hyundai, Kia", 
+      "Ford, Chevrolet, Chrysler, Jeep": "Ford, Chevrolet, Chrysler, Jeep", 
+      "I sve ostale marke prisutne na našem tržištu": "And all other makes available in our market", 
+      "Email *": "Email *", 
+      "Radno Vreme": "Opening Hours", 
+      "Subota: 09:00 - 12:00": "Saturday: 09:00–12:00", 
+      "Da, radimo sa apsolutno svim markama i modelima vozila. Imamo dijagnostičku opremu i softvere za VAG grupu (VW, Audi, Škoda, Seat), BMW, Mercedes, Renault, Peugeot, Citroën, Fiat, Opel, Ford, kao i sve ostale proizvođače prisutne na našem tržištu.": "Yes, we work with virtually all vehicle makes and models. Our diagnostic equipment and software support the VAG Group (VW, Audi, Škoda, SEAT), BMW, Mercedes, Renault, Peugeot, Citroën, Fiat, Opel, Ford and other manufacturers available in our market.", 
+      "Osnovna dijagnostika traje između 10 i 20 minuta. Kompletna dijagnostika obično traje između 30 minuta i 1 sat, zavisno od složenosti problema i broja kontrolnih jedinica koje treba proveriti. Za komplikovanije slučajeve može biti potrebno više vremena.": "Basic diagnostics usually takes 10–20 minutes. A full diagnostic check typically takes 30 minutes to an hour, depending on the issue and the number of control units. Complex cases may take longer.", 
+      "Da, dolazimo na vašu adresu sa kompletnom dijagnostičkom opremom. Ova usluga je idealna ako vozilo ne može da se pomeri ili želite da izbegnete šlepanje. Pokrivamo grad i okolinu.": "Yes, we come to your address with complete diagnostic equipment. This is ideal if the vehicle cannot be moved or you want to avoid towing. We cover the city and surrounding area.", 
+      "Apsolutno. Čak to i preporučujemo. Na taj način možete direktno videti šta dijagnostika pokazuje i dobiti objašnjenje na licu mesta. Transparentnost je deo našeg pristupa.": "Absolutely. We even encourage it. You can see the diagnostic results directly and receive an explanation on site. Transparency is part of our approach.", 
+      "Pružamo garanciju na sve izvršene usluge. Ako se pojavi bilo kakav problem nakon naše intervencije, bićemo tu da ga rešimo bez dodatnih troškova. Precizni uslovi garancije zavise od vrste usluge.": "We provide a warranty on our services. If an issue related to our work arises, we will help resolve it. Exact warranty terms depend on the service performed.", 
+      "Najbrže je da nas pozovete na telefon. Možete i da popunite kontakt formu na ovoj stranici ili nam pošaljete poruku preko WhatsApp-a. Obično možemo zakazati termin u roku od 1-2 dana.": "The quickest way is to call us. You can also fill in the contact form or message us on WhatsApp. Appointments can usually be arranged within 1–2 days.", 
+      "Pozovite nas danas i dobijte brzo i profesionalno rešenje za vaše vozilo": "Call us today for a fast, professional solution for your vehicle", 
+      "Auto Dijagnostika Lazarević je specijalizovana servisna radnja fokusirana isključivo na elektronsku dijagnostiku i programiranje vozila. Naš tim čine stručnjaci sa višegodišnjim iskustvom u radu sa najsavremenijom dijagnostičkom opremom.": "Auto Dijagnostika Lazarević specialises in electronic vehicle diagnostics and programming. Our team has years of experience working with modern diagnostic equipment.", 
+      "Razumemo da je moderna elektronika vozila kompleksna, te da svaki problem zahteva precizno dijagnostikovanje i stručnu intervenciju. Zato kontinuirano ulažemo u opremu, edukaciju i praćenje najnovijih tehnologija u automobilskoj industriji.": "Modern vehicle electronics are complex, and every issue requires accurate diagnosis and professional work. We continually invest in equipment, training and the latest automotive technologies.", 
+      "Ne verujemo u \"pokušavanja\" i \"možda će proći\". Svaki problem prvo precizno dijagnostikujemo, zatim jasno objašnjavamo šta je uzrok i koje je rešenje. Tek nakon vaše saglasnosti pristupamo intervenciji.": "We do not rely on guesswork. We diagnose each issue first, explain the cause and recommend a solution. We only proceed with work after your approval.", 
+      "Radimo transparentno - bez skrivenih troškova, bez nepotrebnih intervencija. Ako problem može da se reši jeftinije, mi ćemo vam to reći.": "We work transparently, with no hidden costs or unnecessary work. If there is a more affordable solution, we will tell you.", 
+      "Koristimo isključivo profesionalnu dijagnostičku opremu": "We use professional diagnostic equipment only", 
+      "Magic Motorsport Flex": "Magic Motorsport Flex", 
+      "Automobilska industrija se brzo razvija. Novi modeli dolaze sa novom elektronikom, novim protokolima i novim sistemima. Zato kontinuirano pratimo tehničke novitete i redovno ažuriramo našu opremu.": "The automotive industry evolves quickly. New models bring new electronics, protocols and systems, so we keep up with technical developments and regularly update our equipment.", 
+      "Naš posao je izgrađen na poverenju. Mnogi naši klijenti dolaze po preporuci jer znaju da će dobiti pošten odgovor i kvalitetnu uslugu. Ne nudimo rešenja koja ne funkcionišu, ne naplaćujemo usluge koje nisu potrebne.": "Our business is built on trust. Many clients come through recommendations because they know they will receive honest advice and quality service. We do not offer ineffective solutions or charge for unnecessary work.", 
+      "Naš odnos sa klijentima ne prestaje nakon izvršene usluge. Dostupni smo za sva pitanja, nedoumice ili dodatnu podršku. Ako se pojavi bilo kakav problem, tu smo da ga rešimo.": "Our relationship with clients does not end when the service is complete. We remain available for questions and further support, and we are here to help if an issue arises.", 
+      "Razumemo da vaše vreme nije uvek usklađeno sa standardnim radnim vremenom. Zato nudimo zakazivanje po dogovoru i dolazak na vašu adresu kada vama odgovara.": "We understand that your schedule may not fit standard business hours. We offer appointments by arrangement and can come to your address at a convenient time."
+    },
+    "attrs": {
+      "placeholder": {
+        "Ime i Prezime": "Full Name", 
+        "Telefon": "Phone", 
+        "Email": "Email address", 
+        "npr. VW Golf 7 1.6 TDI": "e.g. VW Golf 7 1.6 TDI", 
+        "Detaljno opišite problem sa vozilom...": "Describe the problem with your vehicle...",
+        "Napišite pitanje (npr. koja vozila radite, cena DPF-a, radno vreme)...": "Type your question (e.g., supported vehicles, DPF price, working hours)..."
+      },
+      "aria-label": {
+        "Poslednji radovi": "Latest work", 
+        "Prethodni radovi": "Previous work", 
+        "Sledeći radovi": "Next work", 
+        "Meni": "Menu", 
+        "Filter galerije": "Gallery filter", 
+        "Glavna navigacija": "Main navigation", 
+        "Auto Dijagnostika Lazarević – početna": "Auto Dijagnostika Lazarević – home", 
+        "Zatvori": "Close", 
+        "Prethodna slika": "Previous image", 
+        "Sledeća slika": "Next image", 
+        "Pregled slike": "Image viewer"
+      }
+    }
+  };
+
   const translations = DATA.tr, attrs = DATA.attrs;
   const norm = s => (s || '').replace(/\s+/g, ' ').trim();
   let lang = localStorage.getItem('adl-language') || 'sr';
@@ -12,14 +279,12 @@
       const p = node.parentElement;
       if (!p || p.closest('script,style,noscript,textarea,svg')) continue;
       
-      // Zaštita: preskoči elemente sa translate="no", .notranslate ili ako sadrže Lazarević u sebi
       if (p.closest('[translate="no"], .notranslate') || node.nodeValue.includes('Lazarević')) continue;
 
       if (!norm(node.nodeValue)) continue;
       if (!node.__adlOriginal) node.__adlOriginal = node.nodeValue;
       const key = norm(node.__adlOriginal);
 
-      // Dodatna zaštita za "Auto dijagnostika" ukoliko se nalazi u okviru brenda/logoa
       if (key === 'auto dijagnostika' && p.closest('h1, h2, .logo, a, span')) {
         let parentEl = p.closest('h1, h2, .logo, a, span');
         if (parentEl && parentEl.textContent.includes('Lazarević')) continue;
@@ -28,6 +293,7 @@
       if (lang === 'en' && translations[key]) node.nodeValue = node.__adlOriginal.replace(key, translations[key]);
       else if (lang === 'sr') node.nodeValue = node.__adlOriginal;
     }
+
     document.querySelectorAll('[placeholder],[aria-label]').forEach(el => {
       ['placeholder', 'aria-label'].forEach(attr => {
         const val = el.getAttribute(attr);
@@ -38,18 +304,26 @@
         el.setAttribute(attr, lang === 'en' && attrs[attr][orig] ? attrs[attr][orig] : orig);
       });
     });
+
     const t = document.querySelector('title'), d = document.querySelector('meta[name="description"]');
     if (t && t.dataset.en) { if (!t.dataset.sr) t.dataset.sr = t.textContent; t.textContent = lang === 'en' ? t.dataset.en : t.dataset.sr; }
     if (d && d.dataset.en) { if (!d.dataset.sr) d.dataset.sr = d.content; d.content = lang === 'en' ? d.dataset.en : d.dataset.sr; }
     document.documentElement.lang = lang;
+
+    // DIREKTNA SINHRONIZACIJA SA CHATBOTOM
+    if (window.ADLChatbot && typeof window.ADLChatbot.setLanguage === 'function') {
+      window.ADLChatbot.setLanguage(lang);
+    }
+
     document.querySelectorAll('.language-switch').forEach(el => {
-      el.querySelector('input').checked = lang === 'en';
+      const chk = el.querySelector('input');
+      if (chk) chk.checked = lang === 'en';
       el.setAttribute('aria-label', lang === 'en' ? 'Choose language' : 'Izaberite jezik');
     });
   };
 
   const nav = document.querySelector('.nav');
-  if (nav) {
+  if (nav && !nav.querySelector('.language-switch')) {
     const sw = document.createElement('label');
     sw.className = 'language-switch';
     sw.innerHTML = '<input type="checkbox" aria-label="Toggle language"><span class="slider"><span class="lang-text sr">SRB</span><span class="lang-text en">ENG</span><span class="handle"></span></span>';
@@ -61,11 +335,18 @@
       translate();
     });
   }
-  let busy = false;
-  new MutationObserver(() => {
+
+let busy = false;
+  new MutationObserver((mutations) => {
     if (busy || lang !== 'en') return;
-    busy = true; translate(); busy = false;
+    // Proveri da li je promena unutar samog chata, pa je ignoriši da ne pravi petlju
+    const isChatChange = mutations.some(m => m.target.closest('.adl-chatbot'));
+    if (isChatChange) return;
+
+    busy = true; 
+    translate(); 
+    busy = false;
   }).observe(document.body, { childList: true, subtree: true, characterData: false });
+
   translate();
-})();
 })();

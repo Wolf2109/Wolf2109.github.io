@@ -1,5 +1,4 @@
-/* Auto Dijagnostika Lazarević — dizajn 2026
-   Ideja: tabla vozila. Boja lampice "check engine" (#ffba08) je boja brenda. */
+/* Auto Dijagnostika Lazarević — dizajn 2026*/
 *,*::before,*::after{box-sizing:border-box}
 :root{
   --navy:#05070d; --navy-2:#0d111b; --navy-3:#262c38;
@@ -15,6 +14,9 @@
 
 }
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:90px}
+html, body {
+  background-color: #080b12 !important;
+}
 body{margin:0;font:400 1.0625rem/1.6 var(--f-body);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden;
   background:radial-gradient(circle at 15% 5%,rgba(106,4,15,.22),transparent 30%),radial-gradient(circle at 85% 20%,rgba(255,186,8,.07),transparent 28%),linear-gradient(180deg,#05070d 0%,#080a10 48%,#05070d 100%);background-attachment:fixed}
 body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:52px 52px;-webkit-mask-image:linear-gradient(to bottom,black,transparent 70%);mask-image:linear-gradient(to bottom,black,transparent 70%)}
