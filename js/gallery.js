@@ -60,14 +60,41 @@
   const cap = lb.querySelector('.lb-cap');
   let idx = 0, current = [];
 
+  const cache = new Map();
+  const fullOf = s => { const i = s.querySelector('img'); return i.dataset.full || i.src; };
+  const preload = src => {
+    if (!cache.has(src)) {
+      const im = new Image();
+      im.decoding = 'async';
+      im.src = src;
+      cache.set(src, im);
+    }
+    return cache.get(src);
+  };
+
   const show = i => {
-    idx = (i + current.length) % current.length;
+    const n = current.length;
+    idx = (i + n) % n;
+    const my = idx;
     const s = current[idx], img = s.querySelector('img');
-    lbImg.src = img.dataset.full || img.src;
+    const full = fullOf(s);
+    const im = preload(full);
+
     lbImg.alt = img.alt;
+    if (im.complete && im.naturalWidth) {
+      lbImg.src = full;                         // već u kešu, prikaz je trenutan
+    } else {
+      lbImg.src = img.currentSrc || img.src;    // odmah prikaži malu sliku
+      im.addEventListener('load', () => { if (idx === my) lbImg.src = full; }, { once: true });
+    }
+
     cap.querySelector('b').textContent = s.querySelector('figcaption b').textContent;
     cap.querySelector('span').textContent = s.querySelector('figcaption span').textContent;
-    cap.querySelector('small').textContent = (idx + 1) + ' / ' + current.length;
+    cap.querySelector('small').textContent = (idx + 1) + ' / ' + n;
+
+    // učitaj unapred sledeću i prethodnu
+    preload(fullOf(current[(idx + 1) % n]));
+    preload(fullOf(current[(idx - 1 + n) % n]));
   };
 
   const open = shot => {
