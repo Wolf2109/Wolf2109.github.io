@@ -1,10 +1,13 @@
-AUTO DIJAGNOSTIKA LAZAREVIĆ – redizajn sajta (oktobar 2026)
+AUTO DIJAGNOSTIKA LAZAREVIĆ – MOTORSPORT REDIZAJN (novembar 2026)
 
 Sajt je običan HTML/CSS/JS, bez build koraka. Otpremite ceo folder na hosting kao i ranije.
 
 STRUKTURA
   index.html, usluge.html, cenovnik.html, konfigurator.html, galerija.html, o-nama.html, kontakt.html
-  css/style.css          jedini stilski fajl (boje i fontovi su promenljive na vrhu: :root)
+  css/style.css          osnovni raspored i komponente
+  css/motorsport.css     novi vizuelni sistem i responsive pravila
+  css/chatbot.css        stilovi chatbota
+  js/motorsport.js       animacije, indikatori skrolovanja, aktivna navigacija i brojači
   js/                    menu, lamps (lampice na početnoj), gallery, working-hours, working-items, kontaktForma, language-switch
   slike/                 originalne fotografije + slike/mini/ (male verzije za brzo učitavanje)
 
@@ -25,3 +28,16 @@ ENGLESKI PREVOD
 
 FONTOVI
   Barlow Condensed i Public Sans se učitavaju sa Google Fonts (kao i ranije Poppins/Rajdhani).
+
+INSTALACIJA / PROVERA
+  1. Napravite rezervnu kopiju trenutnog repozitorijuma.
+  2. Raspakujte ZIP i kopirajte njegov sadržaj u glavni direktorijum GitHub Pages repozitorijuma.
+  3. Objavite izmenjene fajlove kao i ranije. CNAME i SEO meta podaci ostaju sačuvani.
+  4. Za lokalni pregled preporuka: python -m http.server 8000, zatim otvorite http://localhost:8000.
+  5. Kontakt forma koristi postojeći EmailJS, konfigurator postojeći STGFiles embed; proverite ih na hostingu.
+
+NAPOMENA
+  Broj radova na pocetnoj strani predstavlja broj fotografija u galeriji u trenutku izrade (54).
+  Ako dodate radove, azurirajte prvu vrednost data-count i tekst u .spec-strip na index.html.
+  Nisu menjani originalni logo, fotografije, cene, telefonski brojevi ni nalog kontakt forme.
+  Lokalni linkovi i JS/CSS sintaksa su provereni; testiranje u stvarnom pregledaču i spoljnih servisa ostaje za hosting.
